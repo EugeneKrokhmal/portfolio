@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.eabf1561.css",
-    "main.js": "/portfolio/static/js/main.04ca2719.js",
+    "main.css": "/portfolio/static/css/main.105365ab.css",
+    "main.js": "/portfolio/static/js/main.60f91345.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).mp3": "/portfolio/static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).1874fd40f74f17c51fd8.mp3",
-    "static/media/bg.gif": "/portfolio/static/media/bg.58fa2393b2c9bf88ac19.gif",
-    "static/media/avatar-fun.png": "/portfolio/static/media/avatar-fun.45fe2211c627879309b1.png",
-    "static/media/avatar-full.png": "/portfolio/static/media/avatar-full.75c240ecd80e6fd6b69d.png",
-    "static/media/trp2-min.png": "/portfolio/static/media/trp2-min.60b57f680d9df6eeeb1f.png",
-    "static/media/trp-front-min.webp": "/portfolio/static/media/trp-front-min.6f5cdcb1be90f36c5dba.webp",
-    "static/media/sc2-min.webp": "/portfolio/static/media/sc2-min.4d4efa289f24741a00d9.webp",
-    "static/media/gb-min.webp": "/portfolio/static/media/gb-min.f513aec97232b651b262.webp",
-    "static/media/glo-min.webp": "/portfolio/static/media/glo-min.0a58c5b29ac3f5bf6b4e.webp",
-    "static/media/gb-front2-min.webp": "/portfolio/static/media/gb-front2-min.bd592a257208355aac45.webp",
+    "static/media/bg.mp4": "/portfolio/static/media/bg.9bf8c0d71bf22c9a7e2a.mp4",
+    "static/media/trp-front-min.png": "/portfolio/static/media/trp-front-min.e10bb4919913e5a2b57e.png",
+    "static/media/sc2-min.png": "/portfolio/static/media/sc2-min.9144f3d9fef43f230d7b.png",
+    "static/media/glo-min.png": "/portfolio/static/media/glo-min.7804a6410e06b0f85043.png",
+    "static/media/gb-min.png": "/portfolio/static/media/gb-min.8684f39d762dbff95d77.png",
+    "static/media/gb-front2-min.png": "/portfolio/static/media/gb-front2-min.d1b4310964f6ae7aeb17.png",
+    "static/media/sc-front-min.png": "/portfolio/static/media/sc-front-min.1492ca2a7d8fe5d233dd.png",
+    "static/media/glo-front-min.png": "/portfolio/static/media/glo-front-min.7275399acb74eb417ce2.png",
+    "static/media/trp2-min.png": "/portfolio/static/media/trp2-min.96b62003491a7e66077e.png",
     "static/media/Eugene_Krokhmal_CV.pdf": "/portfolio/static/media/Eugene_Krokhmal_CV.954bce475b1b85827051.pdf",
-    "static/media/sc-front-min.webp": "/portfolio/static/media/sc-front-min.415cbe51e3db94859100.webp",
-    "static/media/glo-front-min.webp": "/portfolio/static/media/glo-front-min.6650dec07a5e0acf926d.webp",
+    "static/media/avatar-fun.png": "/portfolio/static/media/avatar-fun.b981884e0aa3c37eb7af.png",
+    "static/media/avatar-full.png": "/portfolio/static/media/avatar-full.e5f1ae58bd91ec5c736b.png",
     "index.html": "/portfolio/index.html",
-    "main.eabf1561.css.map": "/portfolio/static/css/main.eabf1561.css.map",
-    "main.04ca2719.js.map": "/portfolio/static/js/main.04ca2719.js.map",
+    "main.105365ab.css.map": "/portfolio/static/css/main.105365ab.css.map",
+    "main.60f91345.js.map": "/portfolio/static/js/main.60f91345.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eabf1561.css",
-    "static/js/main.04ca2719.js"
+    "static/css/main.105365ab.css",
+    "static/js/main.60f91345.js"
   ]
 }
