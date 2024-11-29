@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.105365ab.css",
-    "main.js": "/portfolio/static/js/main.60f91345.js",
+    "main.css": "/portfolio/static/css/main.ab2a9804.css",
+    "main.js": "/portfolio/static/js/main.9cc0dbe3.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).mp3": "/portfolio/static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).1874fd40f74f17c51fd8.mp3",
     "static/media/bg.mp4": "/portfolio/static/media/bg.9bf8c0d71bf22c9a7e2a.mp4",
+    "static/media/cyber.gif": "/portfolio/static/media/cyber.f6ee4cda4fe3b8b996eb.gif",
     "static/media/trp-front-min.png": "/portfolio/static/media/trp-front-min.e10bb4919913e5a2b57e.png",
     "static/media/sc2-min.png": "/portfolio/static/media/sc2-min.9144f3d9fef43f230d7b.png",
     "static/media/glo-min.png": "/portfolio/static/media/glo-min.7804a6410e06b0f85043.png",
@@ -17,12 +18,12 @@
     "static/media/avatar-fun.png": "/portfolio/static/media/avatar-fun.b981884e0aa3c37eb7af.png",
     "static/media/avatar-full.png": "/portfolio/static/media/avatar-full.e5f1ae58bd91ec5c736b.png",
     "index.html": "/portfolio/index.html",
-    "main.105365ab.css.map": "/portfolio/static/css/main.105365ab.css.map",
-    "main.60f91345.js.map": "/portfolio/static/js/main.60f91345.js.map",
+    "main.ab2a9804.css.map": "/portfolio/static/css/main.ab2a9804.css.map",
+    "main.9cc0dbe3.js.map": "/portfolio/static/js/main.9cc0dbe3.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.105365ab.css",
-    "static/js/main.60f91345.js"
+    "static/css/main.ab2a9804.css",
+    "static/js/main.9cc0dbe3.js"
   ]
 }
