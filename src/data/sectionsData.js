@@ -1,19 +1,21 @@
 // data/sectionsData.JS
 
-import SCimg from '../images/sc2-min.webp';
-import GBimg from '../images/gb-min.webp';
+import SCimg from '../images/sc2-min.png';
+import GBimg from '../images/gb-min.png';
 import Trpimg from '../images/trp2-min.png';
-import GLOimg from '../images/glo-min.webp';
-import SCimgFront from '../images/sc-front-min.webp';
-import GBimgFront from '../images/gb-front2-min.webp';
-import TrpimgFront from '../images/trp-front-min.webp';
-import GLOimgFront from '../images/glo-front-min.webp';
+import GLOimg from '../images/glo-min.png';
+import SCimgFront from '../images/sc-front-min.png';
+import GBimgFront from '../images/gb-front2-min.png';
+import TrpimgFront from '../images/trp-front-min.png';
+import GLOimgFront from '../images/glo-front-min.png';
 import Avatar from '../images/avatar-full.png';
+import AvatarFun from '../images/avatar-fun.png';
 
 const sectionsData = [
     {
         title: 'Hey!',
         avatar: Avatar,
+        avatarFun: AvatarFun,
         bg: true,
         description: `Thank you for visiting my page! I'm Eugene, a full-stack JavaScript developer. Feel free to reach out to me anytime. You can download my CV or send me a message directly. Below, you'll find some examples of my work.`,
         techStack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'ReactJS', 'Alpine JS', 'Knockout JS', 'Redux JS', 'Express JS', 'Node JS', 'SASS/LESS', 'MS ADO', 'AWS', 'Docker', 'Leadership', 'Interviewing'],
@@ -59,9 +61,7 @@ const sectionsData = [
             "Node.JS",
             "Express.JS",
             "MongoDB",
-            "Docker",
-            "GitHub Actions",
-            "AWS",
+            "Tailwind CSS",
             "iOS Development"
         ],
         description: `Tripper is a full-stack web application designed to streamline the management and settlement of group trip expenses. Built with cutting-edge technologies, including TypeScript, React, Node.JS, and MongoDB.`,
