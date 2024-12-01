@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# Portfolio Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hey!
+![Avatar](../images/avatar-full.png)
+![Avatar Fun](../images/avatar-fun.png)
 
-## Available Scripts
+Thank you for visiting my page! I'm Eugene, a full-stack JavaScript developer. Feel free to reach out to me anytime. You can download my CV or send me a message directly. Below, you'll find some examples of my work.
 
-In the project directory, you can run:
+### Tech Stack
+`HTML`, `CSS`, `JavaScript`, `PHP`, `ReactJS`, `Alpine JS`, `Knockout JS`, `Redux JS`, `Express JS`, `Node JS`, `SASS/LESS`, `MS ADO`, `AWS`, `Docker`, `Leadership`, `Interviewing`
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## SpoiledChild™
+![SpoiledChild Frontend](../images/sc2-min.png)
+![SpoiledChild Example](../images/sc-front-min.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Role:** Front-end Developer  
+[Visit Website](https://www.spoiledchild.com/)
 
-### `npm test`
+SpoiledChild uses an AI algorithm it calls SpoiledBrain, which crunched over 250,000 data points gathered from focus groups and sister-brand Il Makiage to formulate products and provide recommendations to customers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Situation:**  
+SpoiledChild™, a high-profile skincare brand, required a robust and engaging eCommerce platform to support its global launch.
 
-### `npm run build`
+**Task:**  
+Build and optimize the website frontend on the Magento 2 platform.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Actions:**  
+- Developed key frontend components using Magento 2, HTML, CSS, JavaScript, and PHP.  
+- Integrated GSAP animations to enhance the customer journey.  
+- Collaborated with cross-functional teams in NY and Kyiv to align the platform with brand standards.  
+- Optimized performance and ensured cross-browser compatibility.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Result:**  
+The SpoiledChild™ website launched successfully, contributing to the brand achieving unicorn status with a $1B valuation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tech Stack
+`HTML`, `CSS`, `Magento 2`, `MySQL`, `JavaScript`, `Knockout JS`, `PHP`, `GSAP`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tripper
+![Tripper App](../images/trp2-min.png)
+![Tripper Example](../images/trp-front-min.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Role:** Full-Stack Developer (Founder)  
+[Visit Website](https://www.tripper.cc/)  
+[GitHub Repository](https://github.com/EugeneKrokhmal)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tripper is a full-stack web application designed to streamline the management and settlement of group trip expenses.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Situation:**  
+Tripper is a travel app to fairly split expenses, coordinate tasks, and manage settlements.
 
-## Learn More
+**Task:**  
+Develop a user-friendly app from scratch.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Actions:**  
+- Created a scalable backend using Node.JS and TypeScript.  
+- Built a responsive frontend with React for a smooth user experience.  
+- Added email notifications for reminders and settlements.  
+- Tested the app during trips and improved it based on feedback.  
+- Set up CI/CD pipelines and hosted the app for smooth updates.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Result:**  
+Tripper is used in real trips, making group travel simpler and fairer.
 
-### Code Splitting
+### Tech Stack
+`React`, `TypeScript`, `Node.JS`, `Express.JS`, `MongoDB`, `Tailwind CSS`, `iOS Development`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Gina Bacconi
+![Gina Bacconi Frontend](../images/gb-min.png)
+![Gina Bacconi Example](../images/gb-front2-min.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Role:** Front-end Developer  
+[Visit Website](https://ginabacconi.com/)
 
-### Making a Progressive Web App
+Gina Bacconi is a British womenswear designer clothing brand.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Situation:**  
+Gina Bacconi needed a new Magento 2 store launched quickly during the challenging COVID period.
 
-### Advanced Configuration
+**Task:**  
+Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Actions:**  
+- Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.  
+- Collaborated with the backend team.  
+- Optimized the store for performance and responsiveness.  
+- Worked under strict time constraints to meet the launch timeline.
 
-### Deployment
+**Result:**  
+The Magento 2 store was successfully launched on time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Tech Stack
+`HTML`, `CSS`, `Magento 2`, `MySQL`, `JavaScript`, `Knockout JS`, `PHP`
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tobacco Company (NDA)
+![Tobacco Company Frontend](../images/glo-min.png)
+![Tobacco Company Example](../images/glo-front-min.png)
+
+**Role:** Lead Front-end Developer  
+**Details:** Under NDA
+
+**Situation:**  
+A leading tobacco company required ongoing support and feature development for its Central EU business unit's Magento 2 platform.
+
+**Task:**  
+Improve performance while delivering new features and maintaining the platform.
+
+**Actions:**  
+- Led daily collaboration with the client to gather requirements.  
+- Managed a team of 5 developers.  
+- Implemented CVW optimization strategies.  
+- Developed new features using Knockout.JS, Alpine.JS, PHP, and JavaScript.  
+- Conducted technical interviews to grow the team.
+
+**Result:**  
+The platform was successfully maintained and enhanced.
+
+### Tech Stack
+`JavaScript`, `PHP`, `Knockout JS`, `Alpine.JS`, `HTML`, `CSS`, `Magento 2`, `MySQL`, `Docker`, `MS Azure`
