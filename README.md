@@ -1,8 +1,6 @@
-# Portfolio Projects
+# Eugene Krokhmal
 
 ## Hey!
-![Avatar](../images/avatar-full.png)
-![Avatar Fun](../images/avatar-fun.png)
 
 Thank you for visiting my page! I'm Eugene, a full-stack JavaScript developer. Feel free to reach out to me anytime. You can download my CV or send me a message directly. Below, you'll find some examples of my work.
 
@@ -12,8 +10,6 @@ Thank you for visiting my page! I'm Eugene, a full-stack JavaScript developer. F
 ---
 
 ## SpoiledChild™
-![SpoiledChild Frontend](../images/sc2-min.png)
-![SpoiledChild Example](../images/sc-front-min.png)
 
 **Role:** Front-end Developer  
 [Visit Website](https://www.spoiledchild.com/)
@@ -41,8 +37,6 @@ The SpoiledChild™ website launched successfully, contributing to the brand ach
 ---
 
 ## Tripper
-![Tripper App](../images/trp2-min.png)
-![Tripper Example](../images/trp-front-min.png)
 
 **Role:** Full-Stack Developer (Founder)  
 [Visit Website](https://www.tripper.cc/)  
@@ -72,8 +66,6 @@ Tripper is used in real trips, making group travel simpler and fairer.
 ---
 
 ## Gina Bacconi
-![Gina Bacconi Frontend](../images/gb-min.png)
-![Gina Bacconi Example](../images/gb-front2-min.png)
 
 **Role:** Front-end Developer  
 [Visit Website](https://ginabacconi.com/)
@@ -101,8 +93,6 @@ The Magento 2 store was successfully launched on time.
 ---
 
 ## Tobacco Company (NDA)
-![Tobacco Company Frontend](../images/glo-min.png)
-![Tobacco Company Example](../images/glo-front-min.png)
 
 **Role:** Lead Front-end Developer  
 **Details:** Under NDA
