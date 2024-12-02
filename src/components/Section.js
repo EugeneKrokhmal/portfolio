@@ -31,9 +31,8 @@ const Section = ({ title, techStack, description, images, onOpen, star, avatar, 
     }, [funMode, techStack]);
 
     return (
-
         <section
-            className={`z-20 relative max-h-screen min-h-screen w-full flex flex-col md:justify-center md:items-start`}
+            className={`z-20 w-full h-full flex flex-col md:justify-center md:items-start`}
         >
             <div
                 className="grid max-w-screen-xl py-16 md:py-0 px-4 mx-auto lg:gap-8 xl:gap-0 lg:px-16 lg:grid-cols-12">

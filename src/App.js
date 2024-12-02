@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useRef, useEffect } from 'react';
 import Section from './components/Section';
 import Drawer from './components/Drawer';
@@ -10,12 +9,14 @@ import backgroundMusic from './audio/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).mp3'
 import Video from "./video/bg.mp4";
 import Cyber from './images/cyber.gif';
 import 'leaflet/dist/leaflet.css';
+import Contact from './components/Contact';
 
 function App() {
     const sectionsRef = useRef([]);
     const audioRef = useRef(null);
     const [currentSection, setCurrentSection] = useState(0);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const [isContactOpen, setIsContactOpen] = useState(false); // State to manage if the contact drawer is open
     const [isMusicPlaying, setIsMusicPlaying] = useState(false);
     const [isFunMode, setFunMode] = useState(false);
 
@@ -45,14 +46,19 @@ function App() {
         }
     };
 
-    const handleOpenDrawer = (index) => {
-        setCurrentSection(index);
-        setIsDrawerOpen(!isDrawerOpen);
+    const handleOpenDrawer = (type) => {
+        if (type === 'contact') {
+            setIsContactOpen(!isContactOpen);
+        } else {
+            setIsContactOpen(false);
+            setIsDrawerOpen(true);
+        }
     };
 
     const handleCloseDrawer = () => {
         return new Promise((resolve) => {
             setIsDrawerOpen(false);
+            setIsContactOpen(false);
             setTimeout(() => resolve(), 300);
         });
     };
@@ -80,13 +86,13 @@ function App() {
 
     return (
         <>
-            <div className={`flex bg-gradient transition-transform duration-300 ${isDrawerOpen ? '-translate-x-1/4' : 'translate-x-0'}`}>
+            <div className={`flex h-full bg-gradient transition-transform duration-300 ${isDrawerOpen ? '-translate-x-1/4' : 'translate-x-0'}`}>
                 {activeLocation && activeLocation.length > 0 &&
                     <FullScreenMap isDrawerOpen={isDrawerOpen} points={activeLocation} isFunMode={isFunMode} />
                 }
-                <div className={`h-screen z-20 w-full md:w-3/4 md:ml-auto relative overflow-hidden pt-16`}>
+                <div className={`z-20 h-full flex md:w-3/4 md:ml-auto overflow-hidden`}>
 
-                    <Navbar funMode={isFunMode} />
+                    <Navbar funMode={isFunMode} handleOpenDrawer={handleOpenDrawer} />
 
                     {isFunMode && (
                         <>
@@ -113,6 +119,7 @@ function App() {
                     <ol>
                         {sectionsData.map((section, index) => (
                             <li
+                            className="h-full"
                                 key={index}
                                 ref={(el) => (sectionsRef.current[index] = el)}
                             >
@@ -158,6 +165,11 @@ function App() {
                 isOpen={isDrawerOpen}
                 onClose={handleCloseDrawer}
                 data={sectionsData[currentSection]}
+            />
+
+            <Contact
+                isOpen={isContactOpen}
+                onClose={handleCloseDrawer}
             />
         </>
     );

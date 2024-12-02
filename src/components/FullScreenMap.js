@@ -27,6 +27,7 @@ const FullScreenMap = ({ points, isDrawerOpen, isFunMode }) => {
     }
 
     const defaultPosition = points[0] ? [points[0].lat, points[0].lng] : [0, 0];
+    const apiKey = process.env.REACT_APP_STADI_MAPS_API_KEY;
 
     return (
         <>
@@ -34,7 +35,7 @@ const FullScreenMap = ({ points, isDrawerOpen, isFunMode }) => {
             <div className={`${isDrawerOpen ? 'md:w-2/12' : 'w-full'} h-1/2 bottom-0 md:h-screen md:w-1/4 fixed z-0`}>
                 <MapContainer center={defaultPosition} zoom={13} style={{ width: '100%', height: '100%' }}>
                     <TileLayer
-                        url={`https://tiles.stadiamaps.com/tiles/${isFunMode ? 'stamen_watercolor/{z}/{x}/{y}{r}.jpg' : 'stamen_toner_lite/{z}/{x}/{y}{r}.png'}`}
+                        url={`https://tiles.stadiamaps.com/tiles/${isFunMode ? 'stamen_watercolor/{z}/{x}/{y}{r}.jpg' : 'stamen_toner_lite/{z}/{x}/{y}{r}.png'}?api_key=${apiKey}`}
                     />
 
                     {points.map((point, index) => (
