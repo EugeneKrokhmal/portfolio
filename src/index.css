@@ -54,12 +54,12 @@ code {
     filter: blur(0)
   }
 
- 50% {
+  50% {
     transform: matrix(3, 0, -3, 1, 3, -3);
     filter: blur(10px)
   }
 
- 100% {
+  100% {
     transform: matrix(1, 0, 0, 1, 0, 0);
     filter: blur(0)
   }
@@ -81,5 +81,15 @@ code {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.map-overlay {
+  background: linear-gradient(180deg, #ffffff, transparent)
+}
+
+@media screen and (min-width:768px) {
+  .map-overlay {
+    background: linear-gradient(270deg, #ffffff, transparent)
   }
 }

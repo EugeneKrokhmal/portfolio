@@ -15,12 +15,15 @@ const sectionsData = [
     {
         title: 'Hey!',
         avatar: Avatar,
+        location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
         avatarFun: AvatarFun,
         bg: true,
         description: `Thank you for visiting my page! I'm Eugene, a full-stack JavaScript developer. Feel free to reach out to me anytime. You can download my CV or send me a message directly. Below, you'll find some examples of my work.`,
         techStack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'ReactJS', 'Alpine JS', 'Knockout JS', 'Redux JS', 'Express JS', 'Node JS', 'SASS/LESS', 'MS ADO', 'AWS', 'Docker', 'Leadership', 'Interviewing'],
     }, {
         title: 'SpoiledChild™',
+        date: "APR 2021 - NOV 2022",
+        location: [{ lat: 32.109333, lng: 34.855499, popupText: 'Tel Aviv' }],
         role: "Front-end Developer",
         description: `SpoiledChild uses an AI algorithm it calls SpoiledBrain, which crunched over 250,000 data points gathered from focus groups and sister-brand Il Makiage to formulate products and provide recommendations to customers.`,
         star: {
@@ -40,7 +43,9 @@ const sectionsData = [
     },
     {
         title: 'Tripper',
+        location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
         role: "Full-Stack Developer (Founder)",
+        date: "JULY 2024",
         star: {
             situation: "Tripper is a travel app to fairly split expenses, coordinate tasks, and manage settlements. Built as a personal startup to freely implement my architectural vision.",
             task: "Develop a user-friendly app from scratch, including design, backend, hosting, CI/CD, and frontend, while ensuring it works well for real-world use.",
@@ -71,8 +76,9 @@ const sectionsData = [
     },
     {
         title: 'Gina Bacconi',
+        location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
         role: "Front-end Developer",
-
+        date: "Winter 2019",
         description: `Gina Bacconi is a British womenswear designer clothing brand with boutiques across multiple countries.`,
         techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
         images: [GBimg, GBimgFront],
@@ -91,6 +97,8 @@ const sectionsData = [
     },
     {
         title: 'Tobacco Company (NDA)',
+        date: "JAN 2023 - NOV 2024",
+        location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
         description: `Details under NDA.`,
         techStack: ['JavaScript', 'PHP', 'Knockout JS', 'Alpine.JS', 'HTML', 'CSS', 'Magento 2', 'MySQL', 'Docker', 'MS Azure'],
         images: [GLOimg, GLOimgFront],

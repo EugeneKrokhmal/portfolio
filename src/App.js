@@ -4,7 +4,12 @@ import Section from './components/Section';
 import Drawer from './components/Drawer';
 import sectionsData from './data/sectionsData';
 import Navbar from './components/Navbar';
+import FullScreenMap from './components/FullScreenMap';
+import Button from './components/Button';
 import backgroundMusic from './audio/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).mp3';
+import Video from "./video/bg.mp4";
+import Cyber from './images/cyber.gif';
+import 'leaflet/dist/leaflet.css';
 
 function App() {
     const sectionsRef = useRef([]);
@@ -42,7 +47,7 @@ function App() {
 
     const handleOpenDrawer = (index) => {
         setCurrentSection(index);
-        setIsDrawerOpen(true);
+        setIsDrawerOpen(!isDrawerOpen);
     };
 
     const handleCloseDrawer = () => {
@@ -71,67 +76,82 @@ function App() {
         }
     }, [isFunMode]);
 
+    const activeLocation = sectionsData[currentSection]?.location || [];
+
     return (
-        <div className={`h-screen w-full relative overflow-hidden pt-16`}>
+        <>
+            <div className={`flex bg-gradient transition-transform duration-300 ${isDrawerOpen ? '-translate-x-1/4' : 'translate-x-0'}`}>
+                {activeLocation && activeLocation.length > 0 &&
+                    <FullScreenMap isDrawerOpen={isDrawerOpen} points={activeLocation} isFunMode={isFunMode} />
+                }
+                <div className={`h-screen z-20 w-full md:w-3/4 md:ml-auto relative overflow-hidden pt-16`}>
 
-            <Navbar funMode={isFunMode} />
+                    <Navbar funMode={isFunMode} />
 
-            <audio ref={audioRef} src={backgroundMusic} loop />
+                    {isFunMode && (
+                        <>
+                            <video
+                                className="fixed md:left-1/4 w-full h-full top-0 left-0 object-cover"
+                                src={Video}
+                                mute
+                                autoPlay
+                                muted
+                                playsInline
+                                loop>
+                                <source src={Video} />
+                            </video>
 
-            {sectionsData.map((section, index) => (
-                <div
-                    className={`transition-transform duration-300 ${isDrawerOpen ? '-translate-x-1/4' : 'translate-x-0'}`}
-                    key={index}
-                    ref={(el) => (sectionsRef.current[index] = el)}
-                >
-                    <Section
-                        {...section}
-                        funMode={isFunMode}
-                        onOpenDrawer={handleOpenDrawer}
-                        onOpen={() => handleOpenDrawer(index)}
-                    />
+                            <div
+                                className="absolute w-1/3 h-1/3 bottom-0 right-0 object-cover opacity"
+                                style={isFunMode ? { 'background': `url(${Cyber})`, 'backgroundSize': '150px' } : {}}>
+                            </div>
+                        </>
+                    )}
+
+                    <audio ref={audioRef} src={backgroundMusic} loop />
+
+                    <ol>
+                        {sectionsData.map((section, index) => (
+                            <li
+                                key={index}
+                                ref={(el) => (sectionsRef.current[index] = el)}
+                            >
+                                <Section
+                                    {...section}
+                                    funMode={isFunMode}
+                                    onOpenDrawer={handleOpenDrawer}
+                                    onOpen={() => handleOpenDrawer(index)}
+                                />
+                            </li>
+                        ))}
+                    </ol>
                 </div>
-            ))}
 
-            <div className="lg:px-16 container max-w-screen-xl mx-auto fixed z-0 bottom-6 left-4 right-4 flex gap-2 w-full">
-                <button
-                    onClick={() => scrollToSection(currentSection - 1)}
-                    className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800"
-                >
-                    <span className="relative px-1 py-1 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                        Previous
-                    </span>
-                </button>
-                <button
-                    onClick={() => scrollToSection(currentSection + 1)}
-                    className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
-                >
-                    <span className="relative px-1 py-1 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                        Next
-                    </span>
-                </button>
-
-                <button
-                    className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-500 to-blue-500 group-hover:from-green-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
-                    onClick={toggleFunMode}
-                >
-                    <span className="relative px-1 py-1 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                        Fun Mode
-                    </span>
-                </button>
-
-                {isFunMode && (
-                    <>
-                        <button
+                <div className="md:px-16 fixed z-20 bottom-6 left-4 md:left-1/4 right-4 flex gap-2">
+                    <Button
+                        onClick={() => scrollToSection(currentSection - 1)}
+                        styleClasses="bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800"
+                        text="Previous"
+                    />
+                    <Button
+                        onClick={() => scrollToSection(currentSection + 1)}
+                        styleClasses="bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+                        text="Next"
+                    />
+                    <Button
+                        onClick={toggleFunMode}
+                        styleClasses="ml-auto bg-gradient-to-br from-green-500 to-blue-500 group-hover:from-green-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+                        text="Fun Mode"
+                    />
+                    {isFunMode && (
+                        <Button
                             onClick={handleMusicToggle}
-                            className="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-500 to-blue-500 group-hover:from-green-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+                            styleClasses="bg-gradient-to-br from-green-500 to-blue-500 group-hover:from-green-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
                         >
-                            <span className="relative px-1 py-1 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-                                {isMusicPlaying ? 'Pause' : 'Play'}
-                            </span>
-                        </button>
-                    </>
-                )}
+                            {isMusicPlaying ? 'Pause' : 'Play'}
+                        </Button>
+                    )}
+                </div>
             </div>
 
             <Drawer
@@ -139,7 +159,7 @@ function App() {
                 onClose={handleCloseDrawer}
                 data={sectionsData[currentSection]}
             />
-        </div>
+        </>
     );
 }
 
