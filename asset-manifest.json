@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.615063b3.css",
-    "main.js": "/portfolio/static/js/main.7857a3bc.js",
+    "main.css": "/portfolio/static/css/main.abbf7aaa.css",
+    "main.js": "/portfolio/static/js/main.64f3c513.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).mp3": "/portfolio/static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).1874fd40f74f17c51fd8.mp3",
     "static/media/bg.mp4": "/portfolio/static/media/bg.9bf8c0d71bf22c9a7e2a.mp4",
@@ -18,12 +18,12 @@
     "static/media/avatar-fun.png": "/portfolio/static/media/avatar-fun.b981884e0aa3c37eb7af.png",
     "static/media/avatar-full.png": "/portfolio/static/media/avatar-full.e5f1ae58bd91ec5c736b.png",
     "index.html": "/portfolio/index.html",
-    "main.615063b3.css.map": "/portfolio/static/css/main.615063b3.css.map",
-    "main.7857a3bc.js.map": "/portfolio/static/js/main.7857a3bc.js.map",
+    "main.abbf7aaa.css.map": "/portfolio/static/css/main.abbf7aaa.css.map",
+    "main.64f3c513.js.map": "/portfolio/static/js/main.64f3c513.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.615063b3.css",
-    "static/js/main.7857a3bc.js"
+    "static/css/main.abbf7aaa.css",
+    "static/js/main.64f3c513.js"
   ]
 }
