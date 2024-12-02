@@ -75,27 +75,6 @@ const sectionsData = [
         gitHub: 'https://github.com/EugeneKrokhmal'
     },
     {
-        title: 'Gina Bacconi',
-        location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
-        role: "Front-end Developer",
-        date: "Winter 2019",
-        description: `Gina Bacconi is a British womenswear designer clothing brand with boutiques across multiple countries.`,
-        techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
-        images: [GBimg, GBimgFront],
-        link: 'https://ginabacconi.com/',
-        star: {
-            situation: "Gina Bacconi, a British womenswear brand, needed a new Magento 2 store launched quickly during the challenging COVID period.",
-            task: "Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.",
-            action: [
-                "Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.",
-                "Collaborated with the backend team",
-                "Optimized the store for performance and responsiveness.",
-                "Worked under strict time constraints to meet the launch timeline."
-            ],
-            result: "The Magento 2 store was successfully launched on time, providing the brand with a robust eCommerce presence during a critical period.",
-        }
-    },
-    {
         title: 'Tobacco Company (NDA)',
         date: "JAN 2023 - NOV 2024",
         location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
@@ -116,6 +95,27 @@ const sectionsData = [
             result: "The platform was successfully maintained and enhanced, meeting client expectations. Performance optimizations and efficient team management significantly improved overall output.",
         },
     },
+    {
+        title: 'Gina Bacconi',
+        location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
+        role: "Front-end Developer",
+        date: "Winter 2019",
+        description: `Gina Bacconi is a British womenswear designer clothing brand with boutiques across multiple countries.`,
+        techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
+        images: [GBimg, GBimgFront],
+        link: 'https://ginabacconi.com/',
+        star: {
+            situation: "Gina Bacconi, a British womenswear brand, needed a new Magento 2 store launched quickly during the challenging COVID period.",
+            task: "Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.",
+            action: [
+                "Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.",
+                "Collaborated with the backend team",
+                "Optimized the store for performance and responsiveness.",
+                "Worked under strict time constraints to meet the launch timeline."
+            ],
+            result: "The Magento 2 store was successfully launched on time, providing the brand with a robust eCommerce presence during a critical period.",
+        }
+    },    
 ];
 
 export default sectionsData;

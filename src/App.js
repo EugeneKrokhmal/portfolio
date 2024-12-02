@@ -16,7 +16,7 @@ function App() {
     const audioRef = useRef(null);
     const [currentSection, setCurrentSection] = useState(0);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-    const [isContactOpen, setIsContactOpen] = useState(false); // State to manage if the contact drawer is open
+    const [isContactOpen, setIsContactOpen] = useState(false);
     const [isMusicPlaying, setIsMusicPlaying] = useState(false);
     const [isFunMode, setFunMode] = useState(false);
 
