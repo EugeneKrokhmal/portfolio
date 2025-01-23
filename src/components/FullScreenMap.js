@@ -27,7 +27,9 @@ const FullScreenMap = ({ points, isDrawerOpen, isFunMode }) => {
     }
 
     const defaultPosition = points[0] ? [points[0].lat, points[0].lng] : [0, 0];
-    const apiKey = process.env.REACT_APP_STADI_MAPS_API_KEY;
+    // const apiKey = process.env.REACT_APP_STADI_MAPS_API_KEY;
+    const apiKey = 'd5503c83-3fa9-44ef-bdc0-6a94b68047b0';
+
 
     return (
         <>
