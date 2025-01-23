@@ -76,7 +76,7 @@ const Section = ({ title, techStack, description, images, onOpen, star, avatar, 
                             src={funMode ? avatarFun : avatar} />
                     </div>
                 )}
-                {images && (
+                {(images && images.length > 0) && (
                     <div className={`${funMode ? 'animate-vibe' : ''} w-48 bottom-0 right-0 z-0 absolute lg:w-2/3 md:static lg:block mx-auto lg:col-span-5`}>
                         <div className="overflow-hidden relative">
                             <Webp src={images[0]} webp={images[0]} className="" alt={title} />

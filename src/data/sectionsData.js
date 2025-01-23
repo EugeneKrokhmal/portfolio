@@ -115,7 +115,49 @@ const sectionsData = [
             ],
             result: "The Magento 2 store was successfully launched on time, providing the brand with a robust eCommerce presence during a critical period.",
         }
+    },
+    {
+        title: 'Sportwetten.de',
+        location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
+        role: "Front-end Developer",
+        date: "2020",
+        description: `Sportwetten.de is a sports betting platform offering a wide range of online betting options.`,
+        techStack: ['WordPress', 'React', 'SASS', 'PHP'],
+        images: [],
+        link: 'https://www.sportwetten.de/',
+        star: {
+            situation: "Sportwetten.de, a sports betting platform, required significant frontend updates and code refactoring to improve performance and scalability.",
+            task: "Support and refactor the platform’s frontend, ensuring smooth functionality and better user experience.",
+            action: [
+                "Refactored existing codebase using React and SASS.",
+                "Enhanced UI components to align with modern design principles.",
+                "Collaborated closely with backend developers for seamless integration.",
+                "Improved page load times and responsiveness across devices."
+            ],
+            result: "The platform's performance and user experience improved significantly, ensuring a more engaging and reliable service for its users."
+        }
     },    
+    {
+        title: 'Gina Bacconi',
+        location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
+        role: "Front-end Developer",
+        date: "Winter 2019",
+        description: `Gina Bacconi is a British womenswear designer clothing brand with boutiques across multiple countries.`,
+        techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
+        images: [GBimg, GBimgFront],
+        link: 'https://ginabacconi.com/',
+        star: {
+            situation: "Gina Bacconi, a British womenswear brand, needed a new Magento 2 store launched quickly during the challenging COVID period.",
+            task: "Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.",
+            action: [
+                "Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.",
+                "Collaborated with the backend team",
+                "Optimized the store for performance and responsiveness.",
+                "Worked under strict time constraints to meet the launch timeline."
+            ],
+            result: "The Magento 2 store was successfully launched on time, providing the brand with a robust eCommerce presence during a critical period.",
+        }
+    },     
 ];
 
 export default sectionsData;
