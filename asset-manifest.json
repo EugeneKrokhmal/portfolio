@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1865c8d7.css",
-    "main.js": "/portfolio/static/js/main.37b33e44.js",
+    "main.js": "/portfolio/static/js/main.532516e9.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).mp3": "/portfolio/static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).1874fd40f74f17c51fd8.mp3",
     "static/media/bg.mp4": "/portfolio/static/media/bg.9bf8c0d71bf22c9a7e2a.mp4",
@@ -19,11 +19,11 @@
     "static/media/avatar-fun.webp": "/portfolio/static/media/avatar-fun.d87d9b4db35064269621.webp",
     "index.html": "/portfolio/index.html",
     "main.1865c8d7.css.map": "/portfolio/static/css/main.1865c8d7.css.map",
-    "main.37b33e44.js.map": "/portfolio/static/js/main.37b33e44.js.map",
+    "main.532516e9.js.map": "/portfolio/static/js/main.532516e9.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1865c8d7.css",
-    "static/js/main.37b33e44.js"
+    "static/js/main.532516e9.js"
   ]
 }
