@@ -1,4 +1,3 @@
-// components/Section.js
 import React, { useEffect, useState } from 'react';
 import Webp from 'react-image-webp';
 import Button from './Button';
@@ -33,11 +32,16 @@ const Section = ({ title, techStack, description, images, onOpen, star, avatar, 
     return (
         <section
             className={`z-20 w-full h-full flex flex-col md:justify-center md:items-start`}
+            aria-labelledby={`section-title-${title}`}
         >
             <div
-                className="grid max-w-screen-xl py-16 md:py-0 px-4 mx-auto lg:gap-8 xl:gap-0 lg:px-16 lg:grid-cols-12">
+                className="grid max-w-screen-xl py-16 md:py-0 px-4 mx-auto lg:gap-8 xl:gap-0 lg:px-16 lg:grid-cols-12"
+            >
                 <div className="relative z-50 mr-auto md:place-self-center lg:col-span-7">
-                    <h1 className={`${funMode ? 'animate-vibe delay-1000' : ''} max-w-2xl mb-4 mt-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl`}>
+                    <h1
+                        id={`section-title-${title}`}
+                        className={`${funMode ? 'animate-vibe delay-1000' : ''} max-w-2xl mb-4 mt-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl`}
+                    >
                         {title}
                     </h1>
                     {date &&
@@ -55,6 +59,7 @@ const Section = ({ title, techStack, description, images, onOpen, star, avatar, 
                                     backgroundColor: bgColors[index]
                                 }}
                                 className={` ${funMode ? 'animate-vibe' : ''} text-gray-100 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300`}
+                                aria-label={`Technology: ${tech}`}
                             >
                                 {tech}
                             </span>
@@ -66,6 +71,7 @@ const Section = ({ title, techStack, description, images, onOpen, star, avatar, 
                             onClick={onOpen}
                             styleClasses={` ${funMode ? 'animate-vibe' : ''} relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800`}
                             text="Read More"
+                            ariaLabel={`Read more about ${title}`}
                         />
                     )}
                 </div>
@@ -73,18 +79,20 @@ const Section = ({ title, techStack, description, images, onOpen, star, avatar, 
                     <div className="w-64 bottom-0 right-0 z-0 absolute lg:w-4/12 mx-auto lg:col-span-5">
                         <img
                             className={`${funMode ? 'animate-vibe' : ''} w-3/4 object-cover overflow-hidden ml-auto`}
-                            src={funMode ? avatarFun : avatar} />
+                            src={funMode ? avatarFun : avatar}
+                            alt={`${title} avatar`}
+                        />
                     </div>
                 )}
                 {(images && images.length > 0) && (
                     <div className={`${funMode ? 'animate-vibe' : ''} w-48 bottom-0 right-0 z-0 absolute lg:w-2/3 md:static lg:block mx-auto lg:col-span-5`}>
                         <div className="overflow-hidden relative">
-                            <Webp src={images[0]} webp={images[0]} className="" alt={title} />
+                            <Webp src={images[0]} webp={images[0]} className="" alt={`${title} image 1`} />
                             <Webp
                                 src={images[1]}
                                 webp={images[1]}
                                 className="absolute bottom-0 w-3/5 right-0"
-                                alt={`${title} Front`}
+                                alt={`${title} image 2`}
                             />
                         </div>
                     </div>

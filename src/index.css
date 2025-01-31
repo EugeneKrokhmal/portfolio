@@ -2,6 +2,7 @@ html {
   top: env(safe-area-inset-top);
   bottom: env(safe-area-inset-bottom);
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 .drawer .transition-transform {
@@ -16,6 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 section {
