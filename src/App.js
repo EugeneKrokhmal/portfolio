@@ -86,13 +86,29 @@ function App() {
 
     return (
         <>
-            <div className={`flex h-full bg-gradient transition-transform duration-300 ${isDrawerOpen ? '-translate-x-1/4' : 'translate-x-0'}`}>
+            <Navbar
+                funMode={isFunMode}
+                handleOpenDrawer={handleOpenDrawer}
+                aria-label="Navigation bar"
+            />
+            <div
+                className={`flex h-full bg-gradient transition-transform duration-300 ${isDrawerOpen ? '-translate-x-1/4' : 'translate-x-0'}`}
+                role="main"
+                aria-live="polite"
+            >
                 {activeLocation && activeLocation.length > 0 &&
-                    <FullScreenMap isDrawerOpen={isDrawerOpen} points={activeLocation} isFunMode={isFunMode} />
+                    <FullScreenMap
+                        isDrawerOpen={isDrawerOpen}
+                        points={activeLocation}
+                        isFunMode={isFunMode}
+                        aria-label="Full screen map"
+                    />
                 }
-                <div className={`z-20 h-full flex md:w-3/4 md:ml-auto overflow-hidden`}>
-
-                    <Navbar funMode={isFunMode} handleOpenDrawer={handleOpenDrawer} />
+                <div
+                    className={`z-20 h-full flex md:w-3/4 md:ml-auto overflow-hidden`}
+                    role="complementary"
+                    aria-label="Main content"
+                >
 
                     {isFunMode && (
                         <>
@@ -103,25 +119,29 @@ function App() {
                                 autoPlay
                                 muted
                                 playsInline
-                                loop>
+                                loop
+                                aria-hidden="true"
+                            >
                                 <source src={Video} />
                             </video>
 
                             <div
                                 className="absolute w-1/3 h-1/3 bottom-0 right-0 object-cover opacity"
-                                style={isFunMode ? { 'background': `url(${Cyber})`, 'backgroundSize': '150px' } : {}}>
-                            </div>
+                                style={isFunMode ? { 'background': `url(${Cyber})`, 'backgroundSize': '150px' } : {}}
+                                aria-hidden="true"
+                            ></div>
                         </>
                     )}
 
-                    <audio ref={audioRef} src={backgroundMusic} loop />
+                    <audio ref={audioRef} src={backgroundMusic} loop aria-label="Background music" />
 
                     <ol>
                         {sectionsData.map((section, index) => (
                             <li
-                            className="h-full"
+                                className="h-full"
                                 key={index}
                                 ref={(el) => (sectionsRef.current[index] = el)}
+                                aria-label={`Section ${index + 1}`}
                             >
                                 <Section
                                     {...section}
@@ -134,26 +154,30 @@ function App() {
                     </ol>
                 </div>
 
-                <div className="md:px-16 fixed z-20 bottom-6 left-4 md:left-1/4 right-4 flex gap-2">
+                <div className="xl:w-2/4 fixed h-10 md:left-1/4 md:right-0 md:px-16 z-20 bottom-6 left-4 md:left-1/4 right-4 flex gap-2">
                     <Button
                         onClick={() => scrollToSection(currentSection - 1)}
                         styleClasses="bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800"
                         text="Previous"
+                        aria-label="Previous section"
                     />
                     <Button
                         onClick={() => scrollToSection(currentSection + 1)}
                         styleClasses="bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
                         text="Next"
+                        aria-label="Next section"
                     />
                     <Button
                         onClick={toggleFunMode}
                         styleClasses="ml-auto bg-gradient-to-br from-green-500 to-blue-500 group-hover:from-green-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
                         text="Fun Mode"
+                        aria-label="Toggle fun mode"
                     />
                     {isFunMode && (
                         <Button
                             onClick={handleMusicToggle}
                             styleClasses="bg-gradient-to-br from-green-500 to-blue-500 group-hover:from-green-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+                            aria-label={isMusicPlaying ? 'Pause music' : 'Play music'}
                         >
                             {isMusicPlaying ? 'Pause' : 'Play'}
                         </Button>
@@ -165,11 +189,13 @@ function App() {
                 isOpen={isDrawerOpen}
                 onClose={handleCloseDrawer}
                 data={sectionsData[currentSection]}
+                aria-label="Drawer"
             />
 
             <Contact
                 isOpen={isContactOpen}
                 onClose={handleCloseDrawer}
+                aria-label="Contact form"
             />
         </>
     );

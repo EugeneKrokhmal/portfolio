@@ -1,15 +1,15 @@
 // data/sectionsData.JS
 
-import SCimg from '../images/sc2-min.png';
-import GBimg from '../images/gb-min.png';
-import Trpimg from '../images/trp2-min.png';
-import GLOimg from '../images/glo-min.png';
-import SCimgFront from '../images/sc-front-min.png';
-import GBimgFront from '../images/gb-front2-min.png';
-import TrpimgFront from '../images/trp-front-min.png';
-import GLOimgFront from '../images/glo-front-min.png';
+import SCimg from '../images/sc2-min.webp';
+import GBimg from '../images/gb-min.webp';
+import Trpimg from '../images/trp2-min.webp';
+import GLOimg from '../images/glo-min.webp';
+import SCimgFront from '../images/sc-front-min.webp';
+import GBimgFront from '../images/gb-front2-min.webp';
+import TrpimgFront from '../images/trp-front-min.webp';
+import GLOimgFront from '../images/glo-front-min.webp';
 import Avatar from '../images/avatar-full.png';
-import AvatarFun from '../images/avatar-fun.png';
+import AvatarFun from '../images/avatar-fun.webp';
 
 const sectionsData = [
     {

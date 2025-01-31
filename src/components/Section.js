@@ -91,6 +91,8 @@ const Section = ({ title, techStack, description, images, onOpen, star, avatar, 
                             <Webp
                                 src={images[1]}
                                 webp={images[1]}
+                                width="600"
+                                height="400"
                                 className="absolute bottom-0 w-3/5 right-0"
                                 alt={`${title} image 2`}
                             />

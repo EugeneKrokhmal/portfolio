@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "cloudinary": "^2.5.1",
     "fullpage.js": "^4.0.31",
+    "gsap": "^3.12.7",
     "install": "^0.13.0",
     "leaflet": "^1.9.4",
     "npm": "^10.9.1",
@@ -21,8 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -46,10 +47,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "customize-cra": "^1.0.0",
     "file-loader": "^6.2.0",
     "gh-pages": "^6.2.0",
     "image-webpack-loader": "^8.1.0",
     "postcss": "^8.4.49",
+    "react-app-rewired": "^2.2.1",
     "tailwindcss": "^3.4.15"
   }
 }
