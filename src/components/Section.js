@@ -48,7 +48,7 @@ const Section = ({ title, techStack, description, images, onOpen, star, avatar, 
                         <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{date}</time>
                     }
                     {role &&
-                        <h3 className="text-md font-semibold mb-2">{role}</h3>
+                        <h2 className="text-md font-semibold mb-2">{role}</h2>
                     }
                     <p className={` ${funMode ? 'animate-vibe' : ''} max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl`}>{description}</p>
                     <div className="flex flex-wrap mb-6 gap-2">
