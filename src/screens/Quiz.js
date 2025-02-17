@@ -102,7 +102,7 @@ Good luck!`, []);
                     <h1 className="text-shadow mb-6 mt-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-green-400">
                         Quiz Rules
                     </h1>
-                    <pre className="min-h-48 text-xs mb-6 font-light lg:mb-8 text-yellow-300 whitespace-pre-wrap">
+                    <pre className="min-h-64 text-xs mb-6 font-light lg:mb-8 text-yellow-300 whitespace-pre-wrap">
                         {typedRules}
                     </pre>
                     <Button onClick={startQuiz} text={'Start Quiz'} />

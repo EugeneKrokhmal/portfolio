@@ -6,7 +6,6 @@ html {
   top: env(safe-area-inset-top);
   bottom: env(safe-area-inset-bottom);
   user-select: none;
-  scroll-behavior: smooth;
 }
 
 .drawer .transition-transform {

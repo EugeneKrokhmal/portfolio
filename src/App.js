@@ -13,6 +13,7 @@ import Approach from "./screens/Approach";
 import CRTEffect from './context/CRTEffect'
 import { useNavigate } from "react-router-dom";
 import Quiz from "./screens/Quiz";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     const [username, setUsername] = useState("");
@@ -29,33 +30,34 @@ function App() {
         <>
             <CRTEffect>
                 <SearchProvider>
-                        <Navbar aria-label="Navigation bar" />
+                    <ScrollToTop />
+                    <Navbar aria-label="Navigation bar" />
 
-                        <main
-                            onAnimationEnd={handleStart}
-                            className={`px-4 md:px-24 h-full ${isAnimating ? "bios" : ""}`}
-                            role="complementary"
-                            aria-label="Main content"
-                        >
-                            <Routes>
-                                <Route path="/portfolio" element={<Intro setEntered={setEntered} setUsername={setUsername} setIsAnimating={setIsAnimating} />} />
-                                <Route path="/home" element={<Home username={username} />} />
-                                <Route path="/projects" element={<Projects />} />
-                                <Route path="/experience" element={<Experience />} />
-                                <Route path="/search" element={<SearchResults />} />
-                                <Route path="/approach" element={<Approach />} />
-                                <Route path="/contact" element={<Contact />} />
-                                <Route path="/quiz" element={<Quiz />} />
-                            </Routes>
-                        </main>
+                    <main
+                        onAnimationEnd={handleStart}
+                        className={`px-4 md:px-24 h-full ${isAnimating ? "bios" : ""}`}
+                        role="complementary"
+                        aria-label="Main content"
+                    >
+                        <Routes>
+                            <Route path="/portfolio" element={<Intro setEntered={setEntered} setUsername={setUsername} setIsAnimating={setIsAnimating} />} />
+                            <Route path="/home" element={<Home username={username} />} />
+                            <Route path="/projects" element={<Projects />} />
+                            <Route path="/experience" element={<Experience />} />
+                            <Route path="/search" element={<SearchResults />} />
+                            <Route path="/approach" element={<Approach />} />
+                            <Route path="/contact" element={<Contact />} />
+                            <Route path="/quiz" element={<Quiz />} />
+                        </Routes>
+                    </main>
 
-                        <div className="fixed h-32 md:h-24 w-full top-0 rotate-180">
-                            <BlurLayers />
-                        </div>
+                    <div className="fixed h-24 w-full top-0 rotate-180">
+                        <BlurLayers />
+                    </div>
 
-                        <div className="fixed h-24 w-full bottom-0">
-                            <BlurLayers />
-                        </div>
+                    <div className="fixed h-24 w-full bottom-0">
+                        <BlurLayers />
+                    </div>
                 </SearchProvider>
             </CRTEffect>
         </>
