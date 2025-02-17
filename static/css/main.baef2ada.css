@@ -441,6 +441,9 @@ video {
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
 .bottom-0 {
   bottom: 0px;
 }
@@ -471,10 +474,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 .my-6 {
   margin-top: 1.5rem;
@@ -530,6 +529,9 @@ video {
 }
 .hidden {
   display: none;
+}
+.aspect-\[4\/3\] {
+  aspect-ratio: 4/3;
 }
 .h-1\/2 {
   height: 50%;
@@ -643,6 +645,9 @@ video {
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
+.self-start {
+  align-self: flex-start;
+}
 .self-center {
   align-self: center;
 }
@@ -667,11 +672,22 @@ video {
 .rounded-md {
   border-radius: 0.375rem;
 }
+.rounded-xl {
+  border-radius: 0.75rem;
+}
 .border {
   border-width: 1px;
 }
+.border-\[10px\] {
+  border-width: 10px;
+}
 .border-none {
   border-style: none;
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / 1);
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 .border-green-400 {
   --tw-border-opacity: 1;
@@ -727,6 +743,9 @@ video {
 .to-blue-500 {
   --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
 }
+.object-cover {
+  object-fit: cover;
+}
 .p-0\.5 {
   padding: 0.125rem;
 }
@@ -771,6 +790,10 @@ video {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .pb-20 {
   padding-bottom: 5rem;
@@ -884,6 +907,9 @@ video {
   color: rgb(250 204 21 / 1);
   color: rgb(250 204 21 / var(--tw-text-opacity, 1));
 }
+.opacity-\[0\.3\] {
+  opacity: 0.3;
+}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -977,8 +1003,8 @@ code {
 }
 
 .custom-cursor {
-  background-image: url(/portfolio/static/media/cursor.be55bfdc0f60f6383068.png);
-  background-size: 32px;
+  /* background-image: url(./images/cursor.png);
+  background-size: 32px; */
   width: 32px;
   height: 32px;
   position: fixed;
@@ -986,7 +1012,7 @@ code {
   left: 0;
   z-index: 999;
   pointer-events: none;
-  transition: transform 0.1s ease;
+  /* transition: transform 0.1s ease; */
 }
 
 /* ================================= */
@@ -1197,6 +1223,9 @@ code {
   .md\:start-24 {
     inset-inline-start: 6rem;
   }
+  .md\:order-1 {
+    order: 1;
+  }
   .md\:block {
     display: block;
   }
@@ -1271,4 +1300,4 @@ code {
 }
 
 
-/*# sourceMappingURL=main.f29cb2e7.css.map*/
+/*# sourceMappingURL=main.baef2ada.css.map*/
