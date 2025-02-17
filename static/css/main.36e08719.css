@@ -1040,7 +1040,7 @@ body {
 }
 
 .custom-cursor {
-  background-image: url(/intro/static/media/cursor.be55bfdc0f60f6383068.png);
+  background-image: url(/portfolio/static/media/cursor.be55bfdc0f60f6383068.png);
   width: 32px;
   height: 32px;
   background-size: 32px;
@@ -1175,7 +1175,7 @@ code {
 
 @keyframes bios {
   0% {
-    background-image: url(/intro/static/media/bios.5fa8c196ede136646176.jpg);
+    background-image: url(/portfolio/static/media/bios.5fa8c196ede136646176.jpg);
   }
 
   50% {
@@ -1184,7 +1184,7 @@ code {
   }
 
   75% {
-    background-image: url(/intro/static/media/bios.5fa8c196ede136646176.jpg);
+    background-image: url(/portfolio/static/media/bios.5fa8c196ede136646176.jpg);
     transform: matrix(0, 0, 0, 0, 0, 0);
   }
 
@@ -1358,4 +1358,4 @@ code {
 }
 
 
-/*# sourceMappingURL=main.44775db9.css.map*/
+/*# sourceMappingURL=main.36e08719.css.map*/
