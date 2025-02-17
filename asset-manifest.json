@@ -1,29 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1865c8d7.css",
-    "main.js": "/portfolio/static/js/main.532516e9.js",
-    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).mp3": "/portfolio/static/media/REDLIGHT - 9TS BABY (DISRUPTA BOOTLEG).1874fd40f74f17c51fd8.mp3",
-    "static/media/bg.mp4": "/portfolio/static/media/bg.9bf8c0d71bf22c9a7e2a.mp4",
-    "static/media/cyber.gif": "/portfolio/static/media/cyber.f6ee4cda4fe3b8b996eb.gif",
-    "static/media/trp-front-min.webp": "/portfolio/static/media/trp-front-min.6f5cdcb1be90f36c5dba.webp",
-    "static/media/gb-min.webp": "/portfolio/static/media/gb-min.f513aec97232b651b262.webp",
-    "static/media/glo-min.webp": "/portfolio/static/media/glo-min.0a58c5b29ac3f5bf6b4e.webp",
-    "static/media/sc2-min.webp": "/portfolio/static/media/sc2-min.4d72251d923a7b4fa73b.webp",
-    "static/media/Eugene_Krokhmal_CV.pdf": "/portfolio/static/media/Eugene_Krokhmal_CV.c93e3e4bf3e08c685d26.pdf",
-    "static/media/trp2-min.webp": "/portfolio/static/media/trp2-min.88750ef4cc9009f6e76a.webp",
-    "static/media/avatar-full.png": "/portfolio/static/media/avatar-full.e5f1ae58bd91ec5c736b.png",
-    "static/media/sc-front-min.webp": "/portfolio/static/media/sc-front-min.a82b70e5300889b276da.webp",
-    "static/media/gb-front2-min.webp": "/portfolio/static/media/gb-front2-min.bbb6d2c94c82d969cb7d.webp",
-    "static/media/glo-front-min.webp": "/portfolio/static/media/glo-front-min.30b246826a11cfd4e49f.webp",
-    "static/media/avatar-fun.webp": "/portfolio/static/media/avatar-fun.d87d9b4db35064269621.webp",
-    "index.html": "/portfolio/index.html",
-    "main.1865c8d7.css.map": "/portfolio/static/css/main.1865c8d7.css.map",
-    "main.532516e9.js.map": "/portfolio/static/js/main.532516e9.js.map",
-    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/intro/static/css/main.44775db9.css",
+    "main.js": "/intro/static/js/main.da8d2c81.js",
+    "static/js/453.1407b060.chunk.js": "/intro/static/js/453.1407b060.chunk.js",
+    "static/media/tripper.mp4": "/intro/static/media/tripper.6501a3a1e8e9bc23fe96.mp4",
+    "static/media/sc.mp4": "/intro/static/media/sc.9316bf66191d3bdce317.mp4",
+    "static/media/gb-min.webp": "/intro/static/media/gb-min.673354d85dc42fd93c27.webp",
+    "static/media/trp-front-min.webp": "/intro/static/media/trp-front-min.55c78a02caafc2dd8405.webp",
+    "static/media/glo-min.webp": "/intro/static/media/glo-min.fe860e0934fd993902f4.webp",
+    "static/media/Eugene_Krokhmal_CV.pdf": "/intro/static/media/Eugene_Krokhmal_CV.c93e3e4bf3e08c685d26.pdf",
+    "static/media/trp2-min.webp": "/intro/static/media/trp2-min.57dc0dc876f7d1290145.webp",
+    "static/media/bios.jpg": "/intro/static/media/bios.5fa8c196ede136646176.jpg",
+    "static/media/cursor.png": "/intro/static/media/cursor.be55bfdc0f60f6383068.png",
+    "static/media/gb-front2-min.webp": "/intro/static/media/gb-front2-min.db6059c47b6a44a9057a.webp",
+    "static/media/glo-front-min.webp": "/intro/static/media/glo-front-min.092fa7e24c918ded893e.webp",
+    "index.html": "/intro/index.html",
+    "main.44775db9.css.map": "/intro/static/css/main.44775db9.css.map",
+    "main.da8d2c81.js.map": "/intro/static/js/main.da8d2c81.js.map",
+    "453.1407b060.chunk.js.map": "/intro/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1865c8d7.css",
-    "static/js/main.532516e9.js"
+    "static/css/main.44775db9.css",
+    "static/js/main.da8d2c81.js"
   ]
 }
