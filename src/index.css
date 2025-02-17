@@ -44,8 +44,8 @@ code {
 }
 
 .custom-cursor {
-  background-image: url(./images/cursor.png);
-  background-size: 32px;
+  /* background-image: url(./images/cursor.png);
+  background-size: 32px; */
   width: 32px;
   height: 32px;
   position: fixed;
@@ -53,7 +53,7 @@ code {
   left: 0;
   z-index: 999;
   pointer-events: none;
-  transition: transform 0.1s ease;
+  /* transition: transform 0.1s ease; */
 }
 
 /* ================================= */

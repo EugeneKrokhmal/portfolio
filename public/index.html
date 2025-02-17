@@ -47,12 +47,14 @@
     -->
 </body>
 
-<div class="hidden md:block custom-cursor"></div>
+<img width="32" style="display: none" src="%PUBLIC_URL%/cursor.webp" class="hidden md:block custom-cursor"
+  alt="cursor'">
 
 <script>
   const customCursor = document.querySelector('.custom-cursor');
 
   document.addEventListener('mousemove', (e) => {
+    customCursor.style.display = 'block';
     customCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
   });
 </script>

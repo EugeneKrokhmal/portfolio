@@ -2,6 +2,9 @@ import Slider from "react-slick";
 import { useState, useMemo } from "react";
 import data from "../data";
 import useTypedText from "../hooks/UseTypedText";
+import TV from '../images/redesign/tv.gif';
+import StaticGlitch from '../images/redesign/static-glitch.gif';
+
 
 const ProjectSlider = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -71,43 +74,51 @@ const ProjectSlider = () => {
 
             <div className="text-green-400 pt-24">
                 <div className="flex gap-4 flex-wrap md:flex-nowrap">
-                    <div className="md:w-2/4">
-                        <h2 className="text-4xl font-bold mb-4">{currentProject.title}</h2>
-                        {currentProject.date && (
-                            <time className="mb-1 text-sm font-normal leading-none">
-                                {currentProject.date}
-                            </time>
-                        )}
-                        {currentProject.role && (
-                            <p className="text-sm font-semibold mb-2">{currentProject.role}</p>
-                        )}
-                        <p className="text-xs mb-6 font-light lg:mb-8 text-yellow-400">
-                            {currentProject.description}
-                        </p>
-
-                        <div className="flex flex-wrap mb-6 gap-2">
-                            {currentProject.techStack?.map((tech, index) => (
-                                <div
-                                    key={index}
-                                    className="text-xs bg-black font-medium px-2.5 py-0.5 rounded bg-green-400 box-shadow"
-                                    aria-label={`Technology: ${tech}`}
-                                >
-                                    <span className="text-black no-shadow">{tech}</span>
-                                </div>
-                            ))}
-                        </div>
-
-                        <a
-                            className="inline-block my-4 transition-all bg-green-400 text-green-400 box-shadow px-4 py-2 hover:bg-green-300 hover:text-white-300"
-                            href={currentProject.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="text-black">Link</span>
-                        </a>
+                    <div className="w-full relative self-start border border-green-400 p-2 md:w-2/4 md:order-1 rounded-xl overflow-hidden aspect-[4/3]">
+                        {currentProject.images ? (
+                            <>
+                                <picture className="block w-full h-full">
+                                    <source src={currentProject.images[0]} />
+                                    <img className="h-full w-full object-cover rounded-lg overflow-hidden" src={currentProject.images[0]} alt={currentProject.title} />
+                                </picture>
+                            </>
+                        ) : (
+                            <>
+                                <picture className="block w-full h-full">
+                                    <img className="h-full w-full object-cover rounded-lg overflow-hidden" src={StaticGlitch} alt={currentProject.title} />
+                                </picture>
+                            </>
+                        )
+                        }
+                        <img
+                            className="border-black border-[10px] absolute inset-0 w-full h-full object-cover opacity-[0.3]"
+                            src={TV} alt="tv"
+                        />
                     </div>
                     <div className="mb-6 md:w-2/4">
-                        <pre className="text-xs mb-6 font-light lg:mb-8 text-white whitespace-pre-wrap">
+                        <div className="flex gap-2 mb-4">
+                            <a
+                                className="border-green-400 self-start inline-block transition-all bg-green-400 text-green-400 box-shadow px-4 py-3 hover:bg-green-300 hover:text-white-300"
+                                href={currentProject.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span className="text-black">Link</span>
+                            </a>
+                            <div className="self-start flex flex-wrap mb-6 gap-2">
+                                {currentProject.techStack?.map((tech, index) => (
+                                    <div
+                                        key={index}
+                                        className="text-xs bg-black font-medium px-2.5 py-0.5 bg-green-400 box-shadow"
+                                        aria-label={`Technology: ${tech}`}
+                                    >
+                                        <span className="text-black no-shadow">{tech}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <pre className="text-xs mb-6 font-light lg:mb-8 text-white whitespace-pre-wrap mb-4">
                             {typedText}
                         </pre>
                     </div>

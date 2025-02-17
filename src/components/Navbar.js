@@ -26,7 +26,7 @@ const Navbar = () => {
             <nav className={`fixed h-24 w-full z-50 top-0 start-0 ${showSearch ? 'blur' : ''}`}>
                 <div className="h-full px-4 md:px-24 mx-auto flex flex-wrap items-center justify-between">
                     <Link to="/portfolio" className="flex items-center">
-                        <span contenteditable className="self-center text-m font-bold whitespace-nowrap text-green-400 hover:text-yellow-300">
+                        <span className="self-center text-m font-bold whitespace-nowrap text-green-400 hover:text-yellow-300">
                             Eugene Krokhmal/
                         </span>
                     </Link>

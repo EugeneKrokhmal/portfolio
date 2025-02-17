@@ -1,11 +1,9 @@
-import GBimg from './images/webp/gb-min.webp';
-import Trpimg from './images/webp/trp2-min.webp';
-import GLOimg from './images/webp/glo-min.webp';
-import GBimgFront from './images/webp/gb-front2-min.webp';
-import TrpimgFront from './images/webp/trp-front-min.webp';
-import GLOimgFront from './images/webp/glo-front-min.webp';
-import SCVideo from './video/sc.mp4';
-import TripperVideo from './video/tripper.mp4';
+import SportWetten from './images/redesign/sportwetten.webp';
+import SpoiledChild from './images/redesign/spoiledChild.webp';
+import GinaBacconi from './images/redesign/ginaBacconi.webp';
+import Nda from './images/redesign/nda.webp'
+import Tripper from './images/redesign/tripper.webp'
+
 
 const data = {
     projects: [
@@ -27,8 +25,7 @@ const data = {
                 result: `The SpoiledChild™ website launched successfully, contributing to the brand achieving unicorn status with a $1B valuation.`,
             },
             techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP', 'GSAP'],
-            // images: [SCimg, SCimgFront],
-            video: [SCVideo],
+            images: [SpoiledChild],
             link: 'https://www.spoiledchild.com/',
             company: "Oddity"
         },
@@ -61,8 +58,7 @@ const data = {
                 "iOS Development"
             ],
             description: `Tripper is a full-stack web application designed to streamline the management and settlement of group trip expenses. Built with cutting-edge technologies, including TypeScript, React, Node.JS, and MongoDB.`,
-            images: [Trpimg, TrpimgFront],
-            video: [TripperVideo],
+            images: [Tripper],
             link: 'https://www.tripper.cc/',
             gitHub: 'https://github.com/EugeneKrokhmal'
         },
@@ -72,7 +68,7 @@ const data = {
             location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
             description: `Details under NDA.`,
             techStack: ['JavaScript', 'PHP', 'Knockout JS', 'Alpine.JS', 'HTML', 'CSS', 'Magento 2', 'MySQL', 'Docker', 'MS Azure'],
-            images: [GLOimg, GLOimgFront],
+            // images: [Nda],
             role: "Lead Front-end Developer",
             star: {
                 situation: "A leading tobacco company required ongoing support and feature development for its Central EU business unit's Magento 2 platform.",
@@ -95,7 +91,7 @@ const data = {
             date: "Winter 2019",
             description: `Gina Bacconi is a British womenswear designer clothing brand with boutiques across multiple countries.`,
             techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
-            images: [GBimg, GBimgFront],
+            images: [GinaBacconi],
             link: 'https://ginabacconi.com/',
             star: {
                 situation: "Gina Bacconi, a British womenswear brand, needed a new Magento 2 store launched quickly during the challenging COVID period.",
@@ -117,7 +113,7 @@ const data = {
             date: "2020",
             description: `Sportwetten.de is a sports betting platform offering a wide range of online betting options.`,
             techStack: ['WordPress', 'React', 'SASS', 'PHP'],
-            images: [],
+            images: [SportWetten],
             link: 'https://www.sportwetten.de/',
             star: {
                 situation: "Sportwetten.de, a sports betting platform, required significant frontend updates and code refactoring to improve performance and scalability.",
