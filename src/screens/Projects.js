@@ -114,7 +114,7 @@ const ProjectSlider = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <span className="text-black">Link</span>
+                                    <span className="text-black">Code</span>
                                 </a>
                             )}                            
                             <div className="self-start flex flex-wrap mb-6 gap-2">

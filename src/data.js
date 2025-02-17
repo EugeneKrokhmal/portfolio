@@ -215,7 +215,11 @@ const data = {
             company: "Oddity",
             date: "04/2021 – 11/2022",
             location: "Israel, Tel Aviv",
-            website: "https://oddity.com/"
+            website: "https://oddity.com/",
+            responsibilities: [
+                "Platform development and launch: Launched SpoiledChild contributing to $1B valuation", 
+                "Performance: Optimized web performance, increasing page load speed by 30% improving sales"
+            ]
         },
         {
             title: "Front-End Developer",

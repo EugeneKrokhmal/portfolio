@@ -32,9 +32,15 @@ const Experience = () => {
                         <pre className="text-xs mb-4 font-light text-white whitespace-pre-wrap">
                             {data.experiences[activeIndex].date}
                         </pre>
-                        <pre className="text-xs mb-4 font-light text-white whitespace-pre-wrap">
-                            {data.experiences[activeIndex].responsibilities}
-                        </pre>
+                        {(data.experiences[activeIndex].responsibilities && data.experiences[activeIndex].responsibilities.length > 0) && (
+                            <ul className="text-xs mb-4 font-light text-white whitespace-pre-wrap max-w-screen-xs">
+                                {data.experiences[activeIndex].responsibilities.map(el => (
+                                    <li className="text-xs mb-4 font-light text-white whitespace-pre-wrap">
+                                        {el}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                         {assosiatedProjects.length > 0 && (
                             <ul className="text-xs mb-4">
                                 <>
