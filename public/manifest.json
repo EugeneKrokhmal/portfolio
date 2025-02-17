@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Eugene Krokhmal",
+  "name": "Eugene Krokhmal - Front-end developer",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "cursor.webp",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "cursor.webp",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "cursor.webp",
       "type": "image/png",
       "sizes": "512x512"
     }

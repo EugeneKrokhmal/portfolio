@@ -5,7 +5,7 @@ const useTimer = (initialTime, onTimeUp) => {
 
     useEffect(() => {
         if (timeLeft <= 0) {
-            onTimeUp(); // Call function when time is up
+            onTimeUp();
             return;
         }
 
@@ -13,7 +13,7 @@ const useTimer = (initialTime, onTimeUp) => {
             setTimeLeft((prev) => prev - 1);
         }, 1000);
 
-        return () => clearInterval(timer); // Cleanup on unmount or reset
+        return () => clearInterval(timer);
     }, [timeLeft, onTimeUp]);
 
     const resetTimer = () => setTimeLeft(initialTime);

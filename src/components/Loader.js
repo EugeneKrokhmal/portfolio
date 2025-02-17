@@ -1,21 +1,17 @@
-// Loader.js
 import React, { useState, useEffect } from 'react';
-import ReactCurvedText from 'react-curved-text';
 
 const Loader = ({ text, textColor = '#000', highlightColor = '#f00', adjacentColor }) => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const radius = 25; // Radius of the circle in pixels
-
-    // Calculate the font size to fit the text within the circle
+    const radius = 25;
     const calculateFontSize = () => {
         const circumference = 2 * Math.PI * radius;
-        return (circumference / text.length) * 1.5; // Adjust multiplier as needed
+        return (circumference / text.length) * 1.5;
     };
 
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prevIndex) => (prevIndex + 1) % text.length);
-        }, 80); // Change active letter every 500ms
+        }, 80);
         return () => clearInterval(interval);
     }, [text.length]);
 
@@ -25,9 +21,9 @@ const Loader = ({ text, textColor = '#000', highlightColor = '#f00', adjacentCol
             let color = textColor;
 
             if (distance === 0) {
-                color = highlightColor; // Active letter
+                color = highlightColor;
             } else if (distance === 1 || distance === text.length - 1) {
-                color = adjacentColor; // Adjacent letters
+                color = adjacentColor;
             }
 
             return (

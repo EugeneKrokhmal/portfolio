@@ -1,4 +1,3 @@
-// components/TypingText.js
 import React, { useState, useEffect } from 'react';
 
 const TypingText = ({ text, speed = 100 }) => {
