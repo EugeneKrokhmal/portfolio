@@ -11,6 +11,7 @@ const Slider = ({ star }) => {
                 spaceBetween={50}
                 slidesPerView={1}
                 autoplay={300}
+                speed={500}
                 variableWidth={true}
                 pagination={{ clickable: true }}>
                 <SwiperSlide>
@@ -18,14 +19,10 @@ const Slider = ({ star }) => {
                         <h3 className="text-xl font-bold mb-2">Situation</h3>
                         <p>{situation}</p>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
                     <div className="p-4">
                         <h3 className="text-xl font-bold mb-2">Task</h3>
                         <p>{task}</p>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
                     <div className="p-4">
                         <h3 className="text-xl font-bold mb-2">Action</h3>
                         <ul className="list-disc pl-6">
@@ -34,8 +31,6 @@ const Slider = ({ star }) => {
                             ))}
                         </ul>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide>
                     <div className="p-4">
                         <h3 className="text-xl font-bold mb-2">Result</h3>
                         <p>{result}</p>

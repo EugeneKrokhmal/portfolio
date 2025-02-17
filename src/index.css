@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   top: env(safe-area-inset-top);
   bottom: env(safe-area-inset-bottom);
@@ -12,12 +16,39 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  /* background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background-size: 100% 1px; */
+  overflow-x: hidden;
+  cursor: none;
+}
+
+
+* {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  background-size: 32px;
+  background-image: url(./images/cursor.png);
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
+  transition: transform 0.1s ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 section {
@@ -29,70 +60,133 @@ code {
     monospace;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.text-shadow {
+  text-shadow: 0 0px 3px currentColor;
+}
 
-@keyframes flash {
+.box-shadow {
+  box-shadow: 0 0px 3px currentColor;
+}
+
+.no-shadow {
+  text-shadow: none;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.slick-next,
+.slick-prev {
+  bottom: -50px;
+  top: auto;
+  z-index: 20;
+}
+
+.slick-arrow::before,
+.slick-arrow::after {
+  content: '>>';
+  font-family: monospace;
+  font-size: 24px;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev::before {
+  content: '<<';
+}
+
+.slick-slide {
+  transition: filter 2s;
+}
+
+.slick-slide {
+  filter: blur(6px);
+}
+
+.slick-current {
+  filter: blur(0);
+}
+
+.search {
+  filter: drop-shadow(0 2px 2px #4ade80);
+}
+
+/* CRT */
+
+/* CRTEffect.css */
+.crt-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.crt-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(rgba(255, 255, 255, 0.1) 50%,
+      rgba(0, 0, 0, 0.1) 50%),
+    linear-gradient(90deg,
+      rgba(255, 0, 0, 0.05),
+      rgba(0, 255, 0, 0.05),
+      rgba(0, 0, 255, 0.05));
+  background-size: 100% 2px, 3px 100%;
+  animation: flicker 0.1s infinite;
+}
+
+@keyframes flicker {
   0% {
-    opacity: 0;
-  }
-
-  50% {
     opacity: 1;
   }
 
+  50% {
+    opacity: 0.95;
+  }
+
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
-.animate-flash {
-  animation: flash 0.2s infinite;
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-@keyframes vibe {
+.bios {
+  animation: bios 1s linear;
+}
+
+@keyframes bios {
   0% {
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    filter: blur(0)
+    background-image: url(./images/bios.jpg);
   }
 
   50% {
-    transform: matrix(3, 0, -3, 1, 3, -3);
-    filter: blur(10px)
+    background-image: none;
+    transform: matrix(0, 0, 0, 0, 0, 0);
+  }
+
+  75% {
+    background-image: url(./images/bios.jpg);
+    transform: matrix(0, 0, 0, 0, 0, 0);
   }
 
   100% {
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    filter: blur(0)
-  }
-}
-
-.animate-vibe {
-  animation: vibe .2s linear;
-  transition: all .3s;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.map-overlay {
-  background: linear-gradient(180deg, #ffffff, transparent)
-}
-
-@media screen and (min-width:768px) {
-  .map-overlay {
-    background: linear-gradient(270deg, #ffffff, transparent)
+    background-image: none;
   }
 }
