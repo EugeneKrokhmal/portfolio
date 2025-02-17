@@ -609,9 +609,6 @@ video {
 .h-32 {
   height: 8rem;
 }
-.h-48 {
-  height: 12rem;
-}
 .h-6 {
   height: 1.5rem;
 }
@@ -1264,6 +1261,10 @@ code {
     inset-inline-start: 6rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:h-24 {
     height: 6rem;
   }
@@ -1358,4 +1359,4 @@ code {
 }
 
 
-/*# sourceMappingURL=main.36e08719.css.map*/
+/*# sourceMappingURL=main.2e5002f0.css.map*/
