@@ -1,9 +1,11 @@
 import SportWetten from './images/redesign/sportwetten.webp';
 import SpoiledChild from './images/redesign/spoiledChild.webp';
 import GinaBacconi from './images/redesign/ginaBacconi.webp';
-import Nda from './images/redesign/nda.webp'
-import Tripper from './images/redesign/tripper.webp'
-
+import Nda from './images/redesign/nda.webp';
+import Tripper from './images/redesign/tripper.webp';
+import CasinoProsCa from './images/redesign/casinoProsCa.webp';
+import LolaRose from './images/redesign/lolaRose.webp';
+import IlMakiage from './images/redesign/ilMakiage.webp';
 
 const data = {
     projects: [
@@ -29,6 +31,27 @@ const data = {
             link: 'https://www.spoiledchild.com/',
             company: "Oddity"
         },
+        {
+            title: 'IL MAKIAGE',
+            date: "APR 2021 - NOV 2022",
+            location: [{ lat: 32.109333, lng: 34.855499, popupText: 'Tel Aviv' }],
+            role: "Front-end Developer",
+            description: `Launched in the US in 2018 by brother-sister duo entrepreneurs, IL MAKIAGE is a New York based, tech-driven prestige beauty brand that is shifting millions of customers to shopping for beauty online.`,
+            star: {
+                situation: `Launched in the US in 2018 by brother-sister duo entrepreneurs, IL MAKIAGE is a New York based, tech-driven prestige beauty brand that is shifting millions of customers to shopping for beauty online.`,
+                task: `Build and optimize the website frontend on the Magento 1 platform, delivering a responsive, visually appealing, and highly interactive customer journey.`,
+                action: [
+                    `Developed key frontend components using Magento 1, HTML, CSS, JavaScript, and PHP.`,
+                    `Collaborated with cross-functional teams in NY and Kyiv to align the platform with brand standards.`,
+                    `Optimized performance and ensured cross-browser compatibility.`
+                ],
+                result: `Contributing to the brand achieving better customere experience and revenue`,
+            },
+            techStack: ['HTML', 'CSS', 'Magento 1', 'MySQL', 'JavaScript', 'PHP'],
+            images: [IlMakiage],
+            link: 'https://www.ilmakiage.com/',
+            company: "Oddity"
+        },        
         {
             title: 'Tripper',
             location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
@@ -60,7 +83,8 @@ const data = {
             description: `Tripper is a full-stack web application designed to streamline the management and settlement of group trip expenses. Built with cutting-edge technologies, including TypeScript, React, Node.JS, and MongoDB.`,
             images: [Tripper],
             link: 'https://www.tripper.cc/',
-            gitHub: 'https://github.com/EugeneKrokhmal'
+            gitHub: 'https://github.com/EugeneKrokhmal',
+            company: "Start-up"
         },
         {
             title: 'Tobacco Company (NDA)',
@@ -107,6 +131,28 @@ const data = {
             company: "Ronis Business Tools"
         },
         {
+            title: 'Lola Rose',
+            location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
+            role: "Front-end Developer",
+            date: "Winter 2019",
+            description: `Lola Rose is a British womenswear designer clothing brand with boutiques across multiple countries.`,
+            techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
+            images: [LolaRose],
+            link: 'https://www.lolaroseglobal.com/',
+            star: {
+                situation: "Lola Rose, a British womenswear brand, needed a new Magento 2 store launched quickly during the challenging COVID period.",
+                task: "Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.",
+                action: [
+                    "Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.",
+                    "Collaborated with the backend team",
+                    "Optimized the store for performance and responsiveness.",
+                    "Worked under strict time constraints to meet the launch timeline."
+                ],
+                result: "The Magento 2 store was successfully launched on time, providing the brand with a robust eCommerce presence during a critical period.",
+            },
+            company: "Ronis Business Tools"
+        },
+        {
             title: 'Sportwetten.de',
             location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
             role: "Front-end Developer",
@@ -117,6 +163,28 @@ const data = {
             link: 'https://www.sportwetten.de/',
             star: {
                 situation: "Sportwetten.de, a sports betting platform, required significant frontend updates and code refactoring to improve performance and scalability.",
+                task: "Support and refactor the platform’s frontend, ensuring smooth functionality and better user experience.",
+                action: [
+                    "Refactored existing codebase using React and SASS.",
+                    "Enhanced UI components to align with modern design principles.",
+                    "Collaborated closely with backend developers for seamless integration.",
+                    "Improved page load times and responsiveness across devices."
+                ],
+                result: "The platform's performance and user experience improved significantly, ensuring a more engaging and reliable service for its users."
+            },
+            company: "Hyperion Tech"
+        },
+        {
+            title: 'Casinopro.ca',
+            location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
+            role: "Front-end Developer",
+            date: "2020",
+            description: `Casinopro.ca is a sports betting platform offering a wide range of online betting options.`,
+            techStack: ['WordPress', 'React', 'SASS', 'PHP'],
+            images: [CasinoProsCa],
+            link: 'https://casinopro.ca/',
+            star: {
+                situation: "Casinopro.ca, a sports betting platform, required significant frontend updates and code refactoring to improve performance and scalability.",
                 task: "Support and refactor the platform’s frontend, ensuring smooth functionality and better user experience.",
                 action: [
                     "Refactored existing codebase using React and SASS.",
@@ -213,7 +281,7 @@ const data = {
         },
         {
             question: "Programming language of the web",
-            options: ["C#", "GO", "JAVASCRIPT","SWIFT"],
+            options: ["C#", "GO", "JAVASCRIPT", "SWIFT"],
             correctAnswerIndex: 2,
         }
     ]

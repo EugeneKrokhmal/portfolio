@@ -97,14 +97,26 @@ const ProjectSlider = () => {
                     </div>
                     <div className="mb-6 md:w-2/4">
                         <div className="flex gap-2 mb-4">
-                            <a
-                                className="border-green-400 self-start inline-block transition-all bg-green-400 text-green-400 box-shadow px-4 py-3 hover:bg-green-300 hover:text-white-300"
-                                href={currentProject.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="text-black">Link</span>
-                            </a>
+                            {currentProject.link && (
+                                <a
+                                    className="border-green-400 self-start inline-block transition-all bg-green-400 text-green-400 box-shadow px-4 py-3 hover:bg-green-300 hover:text-white-300"
+                                    href={currentProject.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span className="text-black">Link</span>
+                                </a>
+                            )}
+                            {currentProject.gitHub && (
+                                <a
+                                    className="border-green-400 self-start inline-block transition-all bg-green-400 text-green-400 box-shadow px-4 py-3 hover:bg-green-300 hover:text-white-300"
+                                    href={currentProject.gitHub}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span className="text-black">Link</span>
+                                </a>
+                            )}                            
                             <div className="self-start flex flex-wrap mb-6 gap-2">
                                 {currentProject.techStack?.map((tech, index) => (
                                     <div
