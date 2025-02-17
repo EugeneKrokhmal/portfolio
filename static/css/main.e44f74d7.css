@@ -560,9 +560,6 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
-.w-1\/4 {
-  width: 25%;
-}
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -1241,9 +1238,6 @@ code {
   .md\:w-2\/4 {
     width: 50%;
   }
-  .md\:w-full {
-    width: 100%;
-  }
   .md\:max-w-96 {
     max-width: 24rem;
   }
@@ -1300,4 +1294,4 @@ code {
 }
 
 
-/*# sourceMappingURL=main.baef2ada.css.map*/
+/*# sourceMappingURL=main.e44f74d7.css.map*/
