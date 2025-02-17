@@ -1,12 +1,12 @@
 import Slider from "react-slick";
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo } from "react";
 import data from "../data";
 import useTypedText from "../hooks/UseTypedText";
 
 const ProjectSlider = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const currentProject = useMemo(() => data.projects[activeSlide] || {}, [activeSlide]);
-    const currentStar = currentProject.star || {};
+    const currentStar = useMemo(() => currentProject.star || {}, [currentProject]);
     const fullText = useMemo(() => (
         [
             `S: ${currentStar.situation || ""}`,

@@ -110,7 +110,9 @@ Good luck!`, []);
             ) : gameOver ? (
                 <div className="text-center">
                     <h1 className="text-shadow mb-6 mt-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-red-400">
-                        Game Over
+                        {score < 2 ?? 'Game Over'}
+                        {(score > 3 && score < 5) && 'Not bad'}
+                        {score >= 5 && 'Well done!'}
                     </h1>
                     <p className="mb-6 text-xl font-semibold text-yellow-300 mt-4">Your score: {score}</p>
                     <Button onClick={resetGame} text={'Try Again'} />
@@ -122,7 +124,7 @@ Good luck!`, []);
                     </h1>
                     <div className="flex justify-between gap-4">
                         <p className="text-xl font-semibold text-yellow-300 mt-4">Score: {score}</p>
-                        <p className="text-xl font-semibold text-yellow-300 mt-4">Attempts: {attemptsLeft}</p>
+                        <p className="text-xl font-semibold text-yellow-300 mt-4">Lives: {attemptsLeft}</p>
                         <p className="text-xl font-semibold text-red-300 mt-4">Time: {timeLeft}s</p>
                     </div>
                     <div>
