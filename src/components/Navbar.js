@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSearch } from '../context/SearchContext';
-import useClickOutside from '../hooks/ClickOutside'; // Adjust the path as needed
+import useClickOutside from '../hooks/ClickOutside';
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -30,7 +30,7 @@ const Navbar = () => {
                             Eugene Krokhmal/
                         </span>
                     </Link>
-                    <ul className="w-full md:max-w-96 flex gap-4 justify-between">
+                    <ul className="w-full md:max-w-96 flex gap-2 justify-between">
                         <li>
                             <Link
                                 onClick={(e) => {

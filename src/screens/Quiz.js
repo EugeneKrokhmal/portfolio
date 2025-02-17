@@ -110,7 +110,7 @@ Good luck!`, []);
             ) : gameOver ? (
                 <div className="text-center">
                     <h1 className="text-shadow mb-6 mt-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-red-400">
-                        {score < 2 ?? 'Game Over'}
+                        {score < 2 && 'Game Over'}
                         {(score > 3 && score < 5) && 'Not bad'}
                         {score >= 5 && 'Well done!'}
                     </h1>
