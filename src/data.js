@@ -49,7 +49,7 @@ const data = {
             role: 'Founder & Full-Stack Engineer',
             company: 'Independent Products',
             description: `CanIFly is a full-stack web application that helps drone pilots determine where they can legally fly — with map-based zones, obstacles, and pilot community features.`,
-            link: 'https://canifly.org/',
+            link: 'https://canifly.org/en',
             gitHub: 'https://github.com/EugeneKrokhmal/CanIFly',
             techStack: [
                 'TypeScript',
@@ -80,6 +80,7 @@ const data = {
             role: 'Creator & Developer',
             company: 'Independent Products',
             description: `A Chrome extension that turns any tab into a glowing CRT / VHS display — scanlines, curvature, phosphor bloom, film grain, glitch, and optional lo-fi audio.`,
+            link: 'https://chromewebstore.google.com/detail/crt-monitor-overlay/aoibgpjjginkobjgkddmgpikppenlpfk',
             gitHub: 'https://github.com/EugeneKrokhmal/crt-overlay-chrome-extension',
             techStack: [
                 'JavaScript',
