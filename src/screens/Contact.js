@@ -12,8 +12,8 @@ const Contact = () => {
                     </a>
                 </li>
                 <li className="mb-2">
-                    <a href="mailto:krokhmalugen@gmail.com" className="text-green-400 hover:text-yellow-300 transition-colors duration-200">
-                        krokhmalugen@gmail.com
+                    <a href="mailto:krokhmaleugen@gmail.com" className="text-green-400 hover:text-yellow-300 transition-colors duration-200">
+                        krokhmaleugen@gmail.com
                     </a>
                 </li>
                 <li className="mb-2">

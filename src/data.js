@@ -2,7 +2,6 @@ import SportWetten from './images/redesign/sportwetten.webp';
 import SpoiledChild from './images/redesign/spoiledChild.webp';
 import GinaBacconi from './images/redesign/ginaBacconi.webp';
 import Nda from './images/redesign/nda.webp';
-import Tripper from './images/redesign/tripper.webp';
 import CasinoProsCa from './images/redesign/casinoProsCa.webp';
 import LolaRose from './images/redesign/lolaRose.webp';
 import IlMakiage from './images/redesign/ilMakiage.webp';
@@ -10,285 +9,374 @@ import IlMakiage from './images/redesign/ilMakiage.webp';
 const data = {
     projects: [
         {
-            title: 'SpoiledChild™',
-            date: "APR 2021 - NOV 2022",
-            location: [{ lat: 32.109333, lng: 34.855499, popupText: 'Tel Aviv' }],
-            role: "Front-end Developer",
-            description: `SpoiledChild uses an AI algorithm it calls SpoiledBrain, which crunched over 250,000 data points gathered from focus groups and sister-brand Il Makiage to formulate products and provide recommendations to customers.`,
+            title: 'AMP.ai',
+            date: 'APR 2025 - AUG 2026',
+            location: [{ lat: 40.7128, lng: -74.006, popupText: 'New York (Remote)' }],
+            role: 'Senior Full-Stack Engineer',
+            company: 'AMP.ai',
+            description: `AMP.ai (amp) is an AI-powered smart fitness platform combining hardware, subscriptions, and a headless commerce stack built on Magento 2 with a custom storefront.`,
+            link: 'https://amp.ai/',
+            techStack: [
+                'TypeScript',
+                'JavaScript',
+                'React',
+                'Node.js',
+                'PHP',
+                'Adobe Magento 2',
+                'MySQL',
+                'GraphQL',
+                'REST APIs',
+                'Data migration',
+                'Subscriptions',
+                'Docker',
+            ],
             star: {
-                situation: `SpoiledChild™, a high-profile skincare brand, required a robust and engaging eCommerce platform to support its global launch. The project faced tight deadlines and demanded a seamless user experience to reflect the brand’s innovative image.`,
-                task: `Build and optimize the website frontend on the Magento 2 platform, delivering a responsive, visually appealing, and highly interactive customer journey.`,
+                situation: `AMP.ai needed a scalable headless commerce foundation while migrating from Shopify to Magento 2 without disrupting active subscribers, orders, and recurring billing.`,
+                task: `Contribute to platform architecture and deliver a continuous Shopify-to-Magento migration covering customers, orders, subscriptions, transactions, and products while preserving complex relationships and recurring-order identifiers.`,
                 action: [
-                    `Developed key frontend components using Magento 2, HTML, CSS, JavaScript, and PHP.`,
-                    `Integrated GSAP animations to enhance the customer journey.`,
-                    `Collaborated with cross-functional teams in NY and Kyiv to align the platform with brand standards.`,
-                    `Optimized performance and ensured cross-browser compatibility.`
+                    'Joined the team early and contributed to architectural decisions for a headless platform built on Magento 2 with a custom storefront.',
+                    'Architected and delivered a continuous migration covering 200,000+ customer records plus orders, active subscriptions, transactions, and products.',
+                    'Applied AI-assisted workflows to analyze migrations, query development databases, and maintain technical documentation.',
+                    'Worked with R&D and CX teams to turn product requirements and support cases into technical solutions.',
                 ],
-                result: `The SpoiledChild™ website launched successfully, contributing to the brand achieving unicorn status with a $1B valuation.`,
+                result: `Delivered a high-volume commerce migration and headless platform foundation that preserved subscription continuity and supported AMP.ai's product roadmap.`,
             },
+        },
+        {
+            title: 'CanIFly.org',
+            date: '2026 - PRESENT',
+            location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
+            role: 'Founder & Full-Stack Engineer',
+            company: 'Independent Products',
+            description: `CanIFly is a full-stack web application that helps drone pilots determine where they can legally fly — with map-based zones, obstacles, and pilot community features.`,
+            link: 'https://canifly.org/',
+            gitHub: 'https://github.com/EugeneKrokhmal/CanIFly',
+            techStack: [
+                'TypeScript',
+                'Next.js',
+                'React',
+                'Node.js',
+                'NestJS',
+                'MongoDB',
+                'Mapbox',
+                'Tailwind CSS',
+                'CI/CD',
+            ],
+            star: {
+                situation: `Drone pilots need a fast way to understand flight restrictions, obstacles, and community-reported zones before they fly.`,
+                task: `Design and build a full-stack product from discovery through deployment, owning architecture, frontend, backend, database design, and iteration based on user feedback.`,
+                action: [
+                    'Designed and built a full-stack web application for legal flight planning and map-based discovery.',
+                    'Owned product discovery, architecture, frontend, backend, database design, and technical direction.',
+                    'Set up deployment pipelines and continued iteration based on user feedback.',
+                ],
+                result: `CanIFly.org is live as an independent product with a map-first experience for drone pilots.`,
+            },
+        },
+        {
+            title: 'CRT Monitor Overlay',
+            date: '2026',
+            location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
+            role: 'Creator & Developer',
+            company: 'Independent Products',
+            description: `A Chrome extension that turns any tab into a glowing CRT / VHS display — scanlines, curvature, phosphor bloom, film grain, glitch, and optional lo-fi audio.`,
+            gitHub: 'https://github.com/EugeneKrokhmal/crt-overlay-chrome-extension',
+            techStack: [
+                'JavaScript',
+                'Chrome Extensions',
+                'WebGL',
+                'Product analytics',
+                'Distribution',
+            ],
+            star: {
+                situation: `I wanted a lightweight retro visual filter that works on any website without breaking interaction or requiring a separate app.`,
+                task: `Own the full product lifecycle from concept and implementation through publishing, analytics, distribution, and retention analysis.`,
+                action: [
+                    'Built and published a Chrome extension with CRT/VHS visual effects and configurable presets.',
+                    'Tracked store impressions, installs, and weekly active users to guide improvements.',
+                    'Handled publishing, user feedback, and ongoing product iteration independently.',
+                ],
+                result: `Generated 23,700 Chrome Web Store impressions, 3,000+ store-page views, and 1,000+ installs, reaching a peak of approximately 941 weekly users.`,
+            },
+        },
+        {
+            title: 'B2C Commerce Platform (NDA)',
+            date: 'JAN 2023 - JAN 2025',
+            location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
+            role: 'Front-End Team Lead / Full-Stack Engineer',
+            company: 'Cloudflight',
+            description: `Delivered and maintained B2C Adobe Commerce platforms across 4+ European markets while leading frontend engineers and Core Web Vitals improvements.`,
+            techStack: ['JavaScript', 'PHP', 'Knockout JS', 'Alpine.JS', 'HTML', 'CSS', 'Magento 2', 'MySQL', 'Docker', 'Microsoft Azure'],
+            images: [Nda],
+            star: {
+                situation: `A leading consumer brand required ongoing support, feature delivery, and performance improvements for B2C commerce platforms across multiple European markets.`,
+                task: `Lead frontend engineers, collaborate with client R&D stakeholders, and improve Core Web Vitals across key customer journeys while balancing legacy constraints and delivery risks.`,
+                action: [
+                    'Led 5+ frontend engineers across teams and seniority levels while remaining hands-on.',
+                    'Conducted one-to-ones, evaluations, 360-degree reviews, development plans, and 20+ technical interviews.',
+                    'Delivered and maintained B2C commerce platforms across 4+ European markets.',
+                    'Led Core Web Vitals and frontend performance improvements across key customer journeys.',
+                ],
+                result: `The platforms were successfully maintained and enhanced with measurable performance gains, strong stakeholder alignment, and a growing engineering team.`,
+            },
+        },
+        {
+            title: 'SpoiledChild™',
+            date: 'APR 2021 - NOV 2022',
+            location: [{ lat: 32.109333, lng: 34.855499, popupText: 'Tel Aviv' }],
+            role: 'Front-End Developer',
+            company: 'Oddity',
+            description: `SpoiledChild uses an AI algorithm called SpoiledBrain, built on 250,000+ data points, to formulate products and personalize recommendations. I joined at an early stage as the brand grew into a unicorn wellness and beauty e-commerce company.`,
             techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP', 'GSAP'],
             images: [SpoiledChild],
             link: 'https://www.spoiledchild.com/',
-            company: "Oddity"
+            star: {
+                situation: `SpoiledChild™, a high-profile skincare brand under ODDITY, required a robust and engaging eCommerce platform to support its global launch.`,
+                task: `Build and optimize the website frontend on Magento 2, delivering responsive, visually rich customer journeys across product, checkout, homepage, and campaign experiences.`,
+                action: [
+                    'Joined SpoiledChild at an early stage and contributed to its growth into a unicorn wellness and beauty e-commerce brand.',
+                    'Developed customer-facing experiences across product pages, checkout, homepage, and campaign landing pages.',
+                    'Integrated GSAP animations and optimized performance across key journeys.',
+                    'Collaborated with cross-functional teams in NY and Tel Aviv to align the platform with brand standards.',
+                ],
+                result: `The SpoiledChild™ website launched successfully and scaled with the brand's rapid growth during ODDITY's unicorn trajectory.`,
+            },
         },
         {
             title: 'IL MAKIAGE',
-            date: "APR 2021 - NOV 2022",
+            date: 'APR 2021 - NOV 2022',
             location: [{ lat: 32.109333, lng: 34.855499, popupText: 'Tel Aviv' }],
-            role: "Front-end Developer",
-            description: `Launched in the US in 2018 by brother-sister duo entrepreneurs, IL MAKIAGE is a New York based, tech-driven prestige beauty brand that is shifting millions of customers to shopping for beauty online.`,
-            star: {
-                situation: `Launched in the US in 2018 by brother-sister duo entrepreneurs, IL MAKIAGE is a New York based, tech-driven prestige beauty brand that is shifting millions of customers to shopping for beauty online.`,
-                task: `Build and optimize the website frontend on the Magento 1 platform, delivering a responsive, visually appealing, and highly interactive customer journey.`,
-                action: [
-                    `Developed key frontend components using Magento 1, HTML, CSS, JavaScript, and PHP.`,
-                    `Collaborated with cross-functional teams in NY and Kyiv to align the platform with brand standards.`,
-                    `Optimized performance and ensured cross-browser compatibility.`
-                ],
-                result: `Contributing to the brand achieving better customere experience and revenue`,
-            },
+            role: 'Front-End Developer',
+            company: 'Oddity',
+            description: `IL MAKIAGE is a New York based, tech-driven prestige beauty brand that is shifting millions of customers to shopping for beauty online.`,
             techStack: ['HTML', 'CSS', 'Magento 1', 'MySQL', 'JavaScript', 'PHP'],
             images: [IlMakiage],
             link: 'https://www.ilmakiage.com/',
-            company: "Oddity"
-        },        
-        {
-            title: 'Tripper',
-            location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
-            role: "Full-Stack Developer (Founder)",
-            date: "JULY 2024",
             star: {
-                situation: "Tripper is a travel app to fairly split expenses, coordinate tasks, and manage settlements. Built as a personal startup to freely implement my architectural vision.",
-                task: "Develop a user-friendly app from scratch, including design, backend, hosting, CI/CD, and frontend, while ensuring it works well for real-world use.",
+                situation: `IL MAKIAGE needed continued frontend development on its Magento 1 platform to support growth in online beauty commerce.`,
+                task: `Build and optimize customer-facing frontend experiences while collaborating with cross-functional teams.`,
                 action: [
-                    "Created a scalable backend using Node.JS and TypeScript for expense tracking and task coordination.",
-                    "Built a responsive frontend with React for a smooth user experience.",
-                    "Added email notifications for reminders and settlements.",
-                    "Tested the app during trips with friends and improved it based on feedback.",
-                    "Introduced the app to friends who now use it for their own trips.",
-                    "Set up CI/CD pipelines and hosted the app for smooth updates.",
-                    "Currently refactoring the codebase, fixing bugs, and developing an iOS version for the App Store."
+                    'Developed key frontend components using Magento 1, HTML, CSS, JavaScript, and PHP.',
+                    'Collaborated with cross-functional teams in NY and Tel Aviv to align the platform with brand standards.',
+                    'Optimized performance and ensured cross-browser compatibility.',
                 ],
-                result: "Tripper is used in real trips, making group travel simpler and fairer. Friends have adopted it, showing its practicality and impact.",
+                result: `Contributed to improved customer experience and platform performance for a major prestige beauty brand.`,
             },
-            techStack: [
-                "React",
-                "TypeScript",
-                "Node.JS",
-                "Express.JS",
-                "MongoDB",
-                "Tailwind CSS",
-                "iOS Development"
-            ],
-            description: `Tripper is a full-stack web application designed to streamline the management and settlement of group trip expenses. Built with cutting-edge technologies, including TypeScript, React, Node.JS, and MongoDB.`,
-            images: [Tripper],
-            link: 'https://www.tripper.cc/',
-            gitHub: 'https://github.com/EugeneKrokhmal',
-            company: "Start-up"
-        },
-        {
-            title: 'Tobacco Company (NDA)',
-            date: "JAN 2023 - NOV 2024",
-            location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
-            description: `Details under NDA.`,
-            techStack: ['JavaScript', 'PHP', 'Knockout JS', 'Alpine.JS', 'HTML', 'CSS', 'Magento 2', 'MySQL', 'Docker', 'MS Azure'],
-            // images: [Nda],
-            role: "Lead Front-end Developer",
-            star: {
-                situation: "A leading tobacco company required ongoing support and feature development for its Central EU business unit's Magento 2 platform.",
-                task: "Improve performance while delivering new features and maintaining the platform.",
-                action: [
-                    "Led daily collaboration with the client to gather requirements and ensure alignment.",
-                    "Managed a team of 5 developers, focusing on support and feature delivery.",
-                    "Implemented CVW (Core Web Vitals) optimization strategies to enhance platform performance.",
-                    "Developed new features using Knockout.JS, Alpine.JS, PHP, and JavaScript.",
-                    "Conducted technical interviews to grow the team."
-                ],
-                result: "The platform was successfully maintained and enhanced, meeting client expectations. Performance optimizations and efficient team management significantly improved overall output.",
-            },
-            company: "CloudFlight"
         },
         {
             title: 'Gina Bacconi',
+            date: 'MAY 2019 - APR 2020',
             location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
-            role: "Front-end Developer",
-            date: "Winter 2019",
+            role: 'Front-End Developer',
+            company: 'Ronis Business Tools',
             description: `Gina Bacconi is a British womenswear designer clothing brand with boutiques across multiple countries.`,
             techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
             images: [GinaBacconi],
             link: 'https://ginabacconi.com/',
             star: {
-                situation: "Gina Bacconi, a British womenswear brand, needed a new Magento 2 store launched quickly during the challenging COVID period.",
-                task: "Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.",
+                situation: `Gina Bacconi needed a new Magento 2 store launched quickly during the challenging COVID period.`,
+                task: `Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.`,
                 action: [
-                    "Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.",
-                    "Collaborated with the backend team",
-                    "Optimized the store for performance and responsiveness.",
-                    "Worked under strict time constraints to meet the launch timeline."
+                    'Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.',
+                    'Collaborated with the backend team on integration and launch readiness.',
+                    'Optimized the store for performance and responsiveness.',
+                    'Worked under strict time constraints to meet the launch timeline.',
                 ],
-                result: "The Magento 2 store was successfully launched on time, providing the brand with a robust eCommerce presence during a critical period.",
+                result: `The Magento 2 store was successfully launched on time during a critical period for the brand.`,
             },
-            company: "Ronis Business Tools"
         },
         {
             title: 'Lola Rose',
+            date: 'MAY 2019 - APR 2020',
             location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
-            role: "Front-end Developer",
-            date: "Winter 2019",
-            description: `Lola Rose is a British womenswear designer clothing brand with boutiques across multiple countries.`,
+            role: 'Front-End Developer',
+            company: 'Ronis Business Tools',
+            description: `Lola Rose is a British womenswear and jewellery brand selling through a Magento 2 e-commerce store.`,
             techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
             images: [LolaRose],
             link: 'https://www.lolaroseglobal.com/',
             star: {
-                situation: "Lola Rose, a British womenswear brand, needed a new Magento 2 store launched quickly during the challenging COVID period.",
-                task: "Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.",
+                situation: `Lola Rose needed a Magento 2 store launched quickly during a challenging retail period.`,
+                task: `Develop and launch a fully functional Magento 2 eCommerce site within tight deadlines.`,
                 action: [
-                    "Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.",
-                    "Collaborated with the backend team",
-                    "Optimized the store for performance and responsiveness.",
-                    "Worked under strict time constraints to meet the launch timeline."
+                    'Built the frontend using HTML, CSS, JavaScript, PHP, and Knockout.JS.',
+                    'Collaborated with the backend team.',
+                    'Optimized the store for performance and responsiveness.',
+                    'Worked under strict time constraints to meet the launch timeline.',
                 ],
-                result: "The Magento 2 store was successfully launched on time, providing the brand with a robust eCommerce presence during a critical period.",
+                result: `The Magento 2 store was successfully launched on time.`,
             },
-            company: "Ronis Business Tools"
         },
         {
             title: 'Sportwetten.de',
+            date: 'APR 2020 - APR 2021',
             location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
-            role: "Front-end Developer",
-            date: "2020",
+            role: 'Front-End Developer',
+            company: 'Hyperion Tech',
             description: `Sportwetten.de is a sports betting platform offering a wide range of online betting options.`,
             techStack: ['WordPress', 'React', 'SASS', 'PHP'],
             images: [SportWetten],
             link: 'https://www.sportwetten.de/',
             star: {
-                situation: "Sportwetten.de, a sports betting platform, required significant frontend updates and code refactoring to improve performance and scalability.",
-                task: "Support and refactor the platform’s frontend, ensuring smooth functionality and better user experience.",
+                situation: `Sportwetten.de required significant frontend updates and code refactoring to improve performance and scalability.`,
+                task: `Support and refactor the platform's frontend, ensuring smooth functionality and a better user experience.`,
                 action: [
-                    "Refactored existing codebase using React and SASS.",
-                    "Enhanced UI components to align with modern design principles.",
-                    "Collaborated closely with backend developers for seamless integration.",
-                    "Improved page load times and responsiveness across devices."
+                    'Refactored existing codebase using React and SASS.',
+                    'Enhanced UI components to align with modern design principles.',
+                    'Collaborated closely with backend developers for seamless integration.',
+                    'Improved page load times and responsiveness across devices.',
                 ],
-                result: "The platform's performance and user experience improved significantly, ensuring a more engaging and reliable service for its users."
+                result: `The platform's performance and user experience improved significantly.`,
             },
-            company: "Hyperion Tech"
         },
         {
             title: 'Casinopro.ca',
+            date: 'APR 2020 - APR 2021',
             location: [{ lat: 49.988358, lng: 36.232845, popupText: 'Kharkiv' }],
-            role: "Front-end Developer",
-            date: "2020",
-            description: `Casinopro.ca is a sports betting platform offering a wide range of online betting options.`,
+            role: 'Front-End Developer',
+            company: 'Hyperion Tech',
+            description: `Casinopro.ca is an online casino comparison and betting platform.`,
             techStack: ['WordPress', 'React', 'SASS', 'PHP'],
             images: [CasinoProsCa],
             link: 'https://casinopro.ca/',
             star: {
-                situation: "Casinopro.ca, a sports betting platform, required significant frontend updates and code refactoring to improve performance and scalability.",
-                task: "Support and refactor the platform’s frontend, ensuring smooth functionality and better user experience.",
+                situation: `Casinopro.ca required frontend updates and refactoring to improve performance and scalability.`,
+                task: `Support and refactor the platform's frontend for smoother functionality and better UX.`,
                 action: [
-                    "Refactored existing codebase using React and SASS.",
-                    "Enhanced UI components to align with modern design principles.",
-                    "Collaborated closely with backend developers for seamless integration.",
-                    "Improved page load times and responsiveness across devices."
+                    'Refactored existing codebase using React and SASS.',
+                    'Enhanced UI components to align with modern design principles.',
+                    'Collaborated closely with backend developers for seamless integration.',
+                    'Improved page load times and responsiveness across devices.',
                 ],
-                result: "The platform's performance and user experience improved significantly, ensuring a more engaging and reliable service for its users."
+                result: `The platform's performance and user experience improved significantly.`,
             },
-            company: "Hyperion Tech"
-        }
+        },
     ],
     experiences: [
         {
-            title: "Front-End Team Lead / Full-Stack Developer",
-            company: "CloudFlight",
-            date: "01/2023 – 01/2025",
-            location: "Poland, Warsaw",
+            title: 'Senior Full-Stack Engineer',
+            company: 'AMP.ai',
+            date: '04/2025 – 08/2026',
+            location: 'Remote',
+            website: 'https://amp.ai/',
+            responsibilities: [
+                'Contributed to headless Magento 2 architecture with a custom storefront.',
+                'Architected and delivered a Shopify-to-Magento migration covering 200,000+ customer records.',
+                'Applied AI-assisted workflows for migration analysis, database investigation, and documentation.',
+                'Partnered with R&D and CX to translate product requirements into technical solutions.',
+            ],
+        },
+        {
+            title: 'Founder & Full-Stack Engineer',
+            company: 'Independent Products',
+            date: '2026 – Present',
+            location: 'Warsaw, Poland',
+            responsibilities: [
+                'Built CanIFly.org — a map-first app for legal drone flight planning.',
+                'Published CRT Monitor Overlay Chrome extension (1,000+ installs, ~941 weekly users peak).',
+                'Owned product discovery, architecture, implementation, deployment, and iteration.',
+            ],
+        },
+        {
+            title: 'Front-End Team Lead / Full-Stack Engineer',
+            company: 'Cloudflight',
+            date: '01/2023 – 01/2025',
+            location: 'Poland, Warsaw',
             website: 'https://www.cloudflight.io/en/',
             responsibilities: [
-                "Lead a team of 5+ developers on a large-scale EU area projects",
-                "Managed tech interviews and employee evaluations, performance reviews",
-                "Developed performance optimization strategies directly for the client"
-            ]
+                'Led 5+ frontend engineers across teams and seniority levels while remaining hands-on.',
+                'Conducted one-to-ones, evaluations, 360 reviews, development plans, and 20+ technical interviews.',
+                'Delivered B2C commerce platforms across 4+ European markets with direct client R&D collaboration.',
+                'Led Core Web Vitals and frontend performance improvements across key customer journeys.',
+            ],
         },
         {
-            title: "Front-End Developer",
-            company: "Oddity",
-            date: "04/2021 – 11/2022",
-            location: "Israel, Tel Aviv",
-            website: "https://oddity.com/",
+            title: 'Front-End Developer',
+            company: 'Oddity',
+            date: '04/2021 – 11/2022',
+            location: 'Israel, Tel Aviv',
+            website: 'https://oddity.com/',
             responsibilities: [
-                "Platform development and launch: Launched SpoiledChild contributing to $1B valuation", 
-                "Performance: Optimized web performance, increasing page load speed by 30% improving sales"
-            ]
+                'Joined SpoiledChild at an early stage and contributed to its unicorn growth trajectory.',
+                'Developed customer-facing experiences across product, checkout, homepage, and campaign pages.',
+                'Optimized web performance and collaborated with cross-functional teams in NY and Tel Aviv.',
+            ],
         },
         {
-            title: "Front-End Developer",
-            company: "Hyperion Tech",
-            date: "04/2020 – 04/2021",
-            location: "Ukraine, Kharkiv",
-            website: "https://hyperion-tech.co/"
+            title: 'Front-End Developer',
+            company: 'Hyperion Tech',
+            date: '04/2020 – 04/2021',
+            location: 'Ukraine, Kharkiv',
+            website: 'https://hyperion-tech.co/',
+            responsibilities: [
+                'Refactored and enhanced React frontends for Sportwetten.de and Casinopro.ca.',
+                'Improved page load times, responsiveness, and UI component quality.',
+            ],
         },
         {
-            title: "Front-End Developer",
-            company: "Ronis Business Tools",
-            date: "05/2019 – 04/2020",
-            location: "Ukraine, Kharkiv"
+            title: 'Front-End Developer',
+            company: 'Ronis Business Tools',
+            date: '05/2019 – 04/2020',
+            location: 'Ukraine, Kharkiv',
+            responsibilities: [
+                'Launched Magento 2 stores for Gina Bacconi and Lola Rose under tight COVID-era deadlines.',
+            ],
         },
         {
-            title: "Front-End Developer",
-            company: "Skynet IT",
-            date: "04/2018 – 03/2019",
-            location: "Ukraine, Kharkiv"
-        }
+            title: 'Front-End Developer',
+            company: 'Skynet IT',
+            date: '04/2018 – 03/2019',
+            location: 'Ukraine, Kharkiv',
+        },
     ],
     education: [
         {
-            institution: "Karazin National University",
+            institution: 'Karazin National University',
             degree: "Bachelor's in Journalism",
-            date: "2011 – 2014",
-            location: "Ukraine, Kharkiv"
+            date: '2011 – 2014',
+            location: 'Ukraine, Kharkiv',
         },
         {
-            institution: "Ukrainian Engineering Pedagogics Academy",
-            degree: "Master's in Computer technologies in education",
-            date: "2018 – 2020",
-            location: "Ukraine, Kharkiv"
-        }
+            institution: 'Ukrainian Engineering Pedagogics Academy',
+            degree: "Master's in Computer Technologies",
+            date: '2018 – 2020',
+            location: 'Ukraine, Kharkiv',
+        },
     ],
     languages: [
-        { name: "Ukrainian", level: "Native" },
-        { name: "English", level: "Proficient" },
-        { name: "Polish", level: "Intermediate" },
-        { name: "Hebrew", level: "Beginner" },
-        { name: "Russian", level: "Proficient" }
+        { name: 'Ukrainian', level: 'Native' },
+        { name: 'English', level: 'Professional' },
+        { name: 'Russian', level: 'Fluent' },
+        { name: 'Polish', level: 'Intermediate' },
+        { name: 'Hebrew', level: 'Basic' },
     ],
     quizData: [
         {
-            question: "A popular JavaScript library for building user interfaces",
-            options: ["REACT", "PHP", "NEXT", "HTML"],
+            question: 'A popular JavaScript library for building user interfaces',
+            options: ['REACT', 'PHP', 'NEXT', 'HTML'],
             correctAnswerIndex: 0,
         },
         {
-            question: "A JavaScript runtime built on Chrome's V8 engine",
-            options: ["NODE", "PYTHON", "RUBY", "JAVA"],
+            question: 'A JavaScript runtime built on Chrome\'s V8 engine',
+            options: ['NODE', 'PYTHON', 'RUBY', 'JAVA'],
             correctAnswerIndex: 0,
         },
         {
-            question: "A package manager for JavaScript",
-            options: ["PIP", "GEM", "COMPOSER", "NPM"],
+            question: 'A package manager for JavaScript',
+            options: ['PIP', 'GEM', 'COMPOSER', 'NPM'],
             correctAnswerIndex: 3,
         },
         {
-            question: "A superset of JavaScript that adds static types",
-            options: ["FLOW", "TYPESCRIPT", "COFFEESCRIPT", "DART"],
+            question: 'A superset of JavaScript that adds static types',
+            options: ['FLOW', 'TYPESCRIPT', 'COFFEESCRIPT', 'DART'],
             correctAnswerIndex: 1,
         },
         {
-            question: "Programming language of the web",
-            options: ["C#", "GO", "JAVASCRIPT", "SWIFT"],
+            question: 'Programming language of the web',
+            options: ['C#', 'GO', 'JAVASCRIPT', 'SWIFT'],
             correctAnswerIndex: 2,
-        }
-    ]
+        },
+    ],
 };
 
 export default data;

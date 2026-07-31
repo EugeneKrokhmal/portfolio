@@ -21,7 +21,7 @@ const Home = ({ username: propUsername }) => {
                 {username ? `> Welcome to my portfolio, ${username}!` : "> Welcome to my portfolio!"}
             </h1>
             <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl text-yellow-400">
-                Let me show you some projects I worked on.
+                Senior Full-Stack Engineer — commerce platforms, product builds, and team leadership.
             </p>
             <div className="flex gap-4 items-center">
                 <Button onClick={() => navigate('/projects')} text={'Projects'} />

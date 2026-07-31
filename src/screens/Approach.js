@@ -4,7 +4,7 @@ const Approach = () => {
         <h1 className="text-shadow max-w-2xl mb-6 mt-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-green-400">My Approach</h1>
         
         <h2 className="text-2xl font-bold text-white mt-6">Introduction</h2>
-        <p className="mt-2">With over six years of experience in web development, I have worked across various industries, from innovative startups to large-scale outsourcing companies and international product unicorns. My expertise spans frontend and backend development, UI/UX design, team leadership, and project management.</p>
+        <p className="mt-2">I'm a Senior Full-Stack Engineer with 8+ years of experience building commerce platforms, complex web applications, and independent products — from AMP.ai's headless Magento migration to CanIFly.org and my CRT Chrome extension. My work spans TypeScript, React, Node.js, PHP, Adobe Commerce, data migration, technical leadership, and AI-assisted engineering workflows.</p>
         
         <h2 className="text-2xl font-bold text-white mt-6">Core Principles</h2>
         <h3 className="text-xl font-semibold text-yellow-300 mt-4">1. Scalability and Performance Optimization</h3>
