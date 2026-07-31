@@ -24,7 +24,7 @@ const Approach = () => {
         <h3 className="text-xl font-semibold text-yellow-300 mt-4">3. Modern Tech Stack and Continuous Learning</h3>
         <ul className="list-disc pl-6 mt-2">
             <li><strong>Frontend:</strong> React, TypeScript, Magento 2, Knockout.js, Alpine.js</li>
-            <li><strong>Backend:</strong> Node.js, PHP, MySQL, MongoDB</li>
+            <li><strong>Backend:</strong> Node.js, PHP, MySQL, PostgreSQL</li>
             <li><strong>DevOps & CI/CD:</strong> Docker, Warden, Azure</li>
             <li><strong>Styling:</strong> Tailwind CSS, SASS/LESS, GSAP</li>
         </ul>

@@ -1,11 +1,3 @@
-import SportWetten from './images/redesign/sportwetten.webp';
-import SpoiledChild from './images/redesign/spoiledChild.webp';
-import GinaBacconi from './images/redesign/ginaBacconi.webp';
-import Nda from './images/redesign/nda.webp';
-import CasinoProsCa from './images/redesign/casinoProsCa.webp';
-import LolaRose from './images/redesign/lolaRose.webp';
-import IlMakiage from './images/redesign/ilMakiage.webp';
-
 const data = {
     projects: [
         {
@@ -55,10 +47,11 @@ const data = {
                 'TypeScript',
                 'Next.js',
                 'React',
-                'Node.js',
-                'NestJS',
-                'MongoDB',
-                'Mapbox',
+                'Hono',
+                'PostgreSQL',
+                'PostGIS',
+                'Supabase',
+                'MapLibre GL',
                 'Tailwind CSS',
                 'CI/CD',
             ],
@@ -101,6 +94,33 @@ const data = {
             },
         },
         {
+            title: 'KeyHaptic',
+            date: '2026',
+            location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
+            role: 'Creator & Developer',
+            company: 'Independent Products',
+            description: `A macOS menu bar app that makes typing and scrolling feel physical — Force Touch trackpad taps on every keypress and Alarm-style detent ticks when you scroll.`,
+            gitHub: 'https://github.com/EugeneKrokhmal/KeyHaptic',
+            techStack: [
+                'Swift',
+                'macOS',
+                'CGEvent',
+                'Force Touch',
+                'Menu bar apps',
+                'Accessibility APIs',
+            ],
+            star: {
+                situation: `MacBooks with Force Touch trackpads can produce precise haptic feedback, but macOS does not tie that feel to everyday typing and scrolling.`,
+                task: `Build a lightweight menu bar utility that adds per-key and scroll-wheel haptics without getting in the way or requiring a Dock icon.`,
+                action: [
+                    'Implemented key and scroll listeners via CGEvent taps with an NSEvent fallback when Accessibility is granted.',
+                    'Drove the trackpad through MultitouchSupport actuators with a fallback to NSHapticFeedbackManager.',
+                    'Shipped configurable intensities, picker-scroll detents, and a build script that packages a signed .app and DMG.',
+                ],
+                result: `Open-source macOS utility published on GitHub with install-from-source workflow and MIT license.`,
+            },
+        },
+        {
             title: 'B2C Commerce Platform (NDA)',
             date: 'JAN 2023 - JAN 2025',
             location: [{ lat: 52.22977, lng: 21.01178, popupText: 'Warsaw' }],
@@ -108,7 +128,6 @@ const data = {
             company: 'Cloudflight',
             description: `Delivered and maintained B2C Adobe Commerce platforms across 4+ European markets while leading frontend engineers and Core Web Vitals improvements.`,
             techStack: ['JavaScript', 'PHP', 'Knockout JS', 'Alpine.JS', 'HTML', 'CSS', 'Magento 2', 'MySQL', 'Docker', 'Microsoft Azure'],
-            images: [Nda],
             star: {
                 situation: `A leading consumer brand required ongoing support, feature delivery, and performance improvements for B2C commerce platforms across multiple European markets.`,
                 task: `Lead frontend engineers, collaborate with client R&D stakeholders, and improve Core Web Vitals across key customer journeys while balancing legacy constraints and delivery risks.`,
@@ -129,7 +148,6 @@ const data = {
             company: 'Oddity',
             description: `SpoiledChild uses an AI algorithm called SpoiledBrain, built on 250,000+ data points, to formulate products and personalize recommendations. I joined at an early stage as the brand grew into a unicorn wellness and beauty e-commerce company.`,
             techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP', 'GSAP'],
-            images: [SpoiledChild],
             link: 'https://www.spoiledchild.com/',
             star: {
                 situation: `SpoiledChild™, a high-profile skincare brand under ODDITY, required a robust and engaging eCommerce platform to support its global launch.`,
@@ -151,7 +169,6 @@ const data = {
             company: 'Oddity',
             description: `IL MAKIAGE is a New York based, tech-driven prestige beauty brand that is shifting millions of customers to shopping for beauty online.`,
             techStack: ['HTML', 'CSS', 'Magento 1', 'MySQL', 'JavaScript', 'PHP'],
-            images: [IlMakiage],
             link: 'https://www.ilmakiage.com/',
             star: {
                 situation: `IL MAKIAGE needed continued frontend development on its Magento 1 platform to support growth in online beauty commerce.`,
@@ -172,7 +189,6 @@ const data = {
             company: 'Ronis Business Tools',
             description: `Gina Bacconi is a British womenswear designer clothing brand with boutiques across multiple countries.`,
             techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
-            images: [GinaBacconi],
             link: 'https://ginabacconi.com/',
             star: {
                 situation: `Gina Bacconi needed a new Magento 2 store launched quickly during the challenging COVID period.`,
@@ -194,7 +210,6 @@ const data = {
             company: 'Ronis Business Tools',
             description: `Lola Rose is a British womenswear and jewellery brand selling through a Magento 2 e-commerce store.`,
             techStack: ['HTML', 'CSS', 'Magento 2', 'MySQL', 'JavaScript', 'Knockout JS', 'PHP'],
-            images: [LolaRose],
             link: 'https://www.lolaroseglobal.com/',
             star: {
                 situation: `Lola Rose needed a Magento 2 store launched quickly during a challenging retail period.`,
@@ -216,7 +231,6 @@ const data = {
             company: 'Hyperion Tech',
             description: `Sportwetten.de is a sports betting platform offering a wide range of online betting options.`,
             techStack: ['WordPress', 'React', 'SASS', 'PHP'],
-            images: [SportWetten],
             link: 'https://www.sportwetten.de/',
             star: {
                 situation: `Sportwetten.de required significant frontend updates and code refactoring to improve performance and scalability.`,
@@ -238,7 +252,6 @@ const data = {
             company: 'Hyperion Tech',
             description: `Casinopro.ca is an online casino comparison and betting platform.`,
             techStack: ['WordPress', 'React', 'SASS', 'PHP'],
-            images: [CasinoProsCa],
             link: 'https://casinopro.ca/',
             star: {
                 situation: `Casinopro.ca required frontend updates and refactoring to improve performance and scalability.`,
@@ -275,6 +288,7 @@ const data = {
             responsibilities: [
                 'Built CanIFly.org — a map-first app for legal drone flight planning.',
                 'Published CRT Monitor Overlay Chrome extension (1,000+ installs, ~941 weekly users peak).',
+                'Built KeyHaptic — macOS menu bar app for Force Touch typing and scroll haptics.',
                 'Owned product discovery, architecture, implementation, deployment, and iteration.',
             ],
         },

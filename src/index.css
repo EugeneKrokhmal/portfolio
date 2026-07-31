@@ -207,3 +207,77 @@ code {
   top: env(safe-area-inset-top);
   bottom: env(safe-area-inset-bottom);
 }
+
+/* ================================= */
+/* 💀 BSOD EASTER EGG */
+/* ================================= */
+.bsod-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: #0000aa;
+  color: #ffffff;
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.35;
+  overflow: hidden;
+  cursor: default !important;
+  user-select: text;
+}
+
+.bsod-overlay * {
+  cursor: default !important;
+}
+
+.bsod-screen {
+  padding: 48px 64px;
+  max-width: 900px;
+}
+
+.bsod-lead {
+  margin: 0 0 24px;
+}
+
+.bsod-stop-name {
+  margin: 0 0 24px;
+  font-weight: bold;
+}
+
+.bsod-body {
+  margin: 0 0 16px;
+}
+
+.bsod-tech-label {
+  margin: 32px 0 8px;
+}
+
+.bsod-tech {
+  margin: 0 0 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.bsod-hint {
+  margin: 48px 0 0;
+  opacity: 0.55;
+  font-size: 12px;
+}
+
+.bsod-cv-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.bsod-cv-link:hover {
+  color: #ccccff;
+}
+
+@media (max-width: 768px) {
+  .bsod-screen {
+    padding: 24px 20px;
+    font-size: 12px;
+  }
+}

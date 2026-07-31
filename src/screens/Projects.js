@@ -2,8 +2,6 @@ import Slider from "react-slick";
 import { useState, useMemo } from "react";
 import data from "../data";
 import useTypedText from "../hooks/UseTypedText";
-import TV from '../images/redesign/tv.gif';
-import StaticGlitch from '../images/redesign/static-glitch.gif';
 
 
 const ProjectSlider = () => {
@@ -73,31 +71,9 @@ const ProjectSlider = () => {
             </Slider>
 
             <div className="text-green-400 pt-24">
-                <div className="flex gap-4 flex-wrap md:flex-nowrap">
-                    <div className="w-full relative self-start border border-green-400 p-2 md:w-2/4 md:order-1 rounded-xl overflow-hidden aspect-[4/3]">
-                        {currentProject.images ? (
-                            <>
-                                <picture className="block w-full h-full">
-                                    <source src={currentProject.images[0]} />
-                                    <img className="h-full w-full object-cover rounded-lg overflow-hidden" src={currentProject.images[0]} alt={currentProject.title} />
-                                </picture>
-                            </>
-                        ) : (
-                            <>
-                                <picture className="block w-full h-full">
-                                    <img className="h-full w-full object-cover rounded-lg overflow-hidden" src={StaticGlitch} alt={currentProject.title} />
-                                </picture>
-                            </>
-                        )
-                        }
-                        <img
-                            className="border-black border-[10px] absolute inset-0 w-full h-full object-cover opacity-[0.3]"
-                            src={TV} alt="tv"
-                        />
-                    </div>
-                    <div className="mb-6 md:w-2/4">
-                        <div className="flex gap-2 mb-4">
-                            {currentProject.link && (
+                <div className="mb-6">
+                        <div className="flex gap-2 mb-4 flex-wrap">
+                            {currentProject.link && currentProject.link !== currentProject.gitHub && (
                                 <a
                                     className="border-green-400 self-start inline-block transition-all bg-green-400 text-green-400 box-shadow px-4 py-3 hover:bg-green-300 hover:text-white-300"
                                     href={currentProject.link}
@@ -133,7 +109,6 @@ const ProjectSlider = () => {
                         <pre className="text-xs mb-6 font-light lg:mb-8 text-white whitespace-pre-wrap mb-4">
                             {typedText}
                         </pre>
-                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Contact from "./screens/Contact";
 import BlurLayers from "./components/BlurLayers";
@@ -14,12 +14,16 @@ import CRTEffect from './context/CRTEffect'
 import { useNavigate } from "react-router-dom";
 import Quiz from "./screens/Quiz";
 import ScrollToTop from "./components/ScrollToTop";
+import BSOD from "./components/BSOD";
+import useRandomBSOD from "./hooks/useRandomBSOD";
 
 function App() {
     const [username, setUsername] = useState("");
     const [entered, setEntered] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
+    const bsodActive = useRandomBSOD(location.pathname !== "/portfolio");
 
     const handleStart = () => {
         navigate("/home");
@@ -28,6 +32,7 @@ function App() {
 
     return (
         <>
+            {bsodActive && <BSOD />}
             <CRTEffect>
                 <SearchProvider>
                     <ScrollToTop />

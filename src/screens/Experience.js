@@ -44,10 +44,34 @@ const Experience = () => {
                         {assosiatedProjects.length > 0 && (
                             <ul className="text-xs mb-4">
                                 <>
-                                    <h3 className="text-yellow-400 text-lg font-bold">Projects:</h3>
-                                    {assosiatedProjects.map((el, i) => (
-                                        <li key={el.title} className="color-green-400">
-                                            {el.title}
+                                    <h3 className="text-yellow-400 mb-2 text-lg font-bold">Projects:</h3>
+                                    {assosiatedProjects.map((el) => (
+                                        <li key={el.title} className="mb-2 text-green-400">
+                                            {el.link && el.link !== el.gitHub ? (
+                                                <a
+                                                    href={el.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="hover:text-yellow-300 underline"
+                                                >
+                                                    {el.title}
+                                                </a>
+                                            ) : (
+                                                el.title
+                                            )}
+                                            {el.gitHub && (
+                                                <>
+                                                    {' · '}
+                                                    <a
+                                                        href={el.gitHub}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="hover:text-yellow-300 underline"
+                                                    >
+                                                        Code
+                                                    </a>
+                                                </>
+                                            )}
                                         </li>
                                     ))}
                                 </>
