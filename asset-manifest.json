@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4295576d.css",
-    "main.js": "/portfolio/static/js/main.83f4116d.js",
+    "main.js": "/portfolio/static/js/main.24a1b0f5.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/tv.gif": "/portfolio/static/media/tv.1700b1d9516968ef1b75.gif",
     "static/media/static-glitch.gif": "/portfolio/static/media/static-glitch.8dbbfccf0c0818eb387c.gif",
     "static/media/sportwetten.webp": "/portfolio/static/media/sportwetten.8374c6f1f633209a8847.webp",
-    "static/media/Eugene_Krokhmal_CV.pdf": "/portfolio/static/media/Eugene_Krokhmal_CV.4773f5489aaf90e3de49.pdf",
+    "static/media/Eugene_Krokhmal_CV.pdf": "/portfolio/static/media/Eugene_Krokhmal_CV.c7c3e0bab739c0375785.pdf",
     "static/media/casinoProsCa.webp": "/portfolio/static/media/casinoProsCa.939cece1afbf8eca39cc.webp",
     "static/media/ginaBacconi.webp": "/portfolio/static/media/ginaBacconi.df245acafd6b2682f531.webp",
     "static/media/lolaRose.webp": "/portfolio/static/media/lolaRose.d7ffeeec909ea0c850f2.webp",
@@ -16,11 +16,11 @@
     "static/media/nda.webp": "/portfolio/static/media/nda.ac937bf8f835feb8bc7b.webp",
     "index.html": "/portfolio/index.html",
     "main.4295576d.css.map": "/portfolio/static/css/main.4295576d.css.map",
-    "main.83f4116d.js.map": "/portfolio/static/js/main.83f4116d.js.map",
+    "main.24a1b0f5.js.map": "/portfolio/static/js/main.24a1b0f5.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4295576d.css",
-    "static/js/main.83f4116d.js"
+    "static/js/main.24a1b0f5.js"
   ]
 }
