@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6340c7ea.css",
-    "main.js": "/portfolio/static/js/main.7ade97ba.js",
+    "main.css": "/portfolio/static/css/main.8a8a09d3.css",
+    "main.js": "/portfolio/static/js/main.857bafa3.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/static-glitch.gif": "/portfolio/static/media/static-glitch.8dbbfccf0c0818eb387c.gif",
     "static/media/Eugene_Krokhmal_CV.pdf": "/portfolio/static/media/Eugene_Krokhmal_CV.c7c3e0bab739c0375785.pdf",
     "static/media/bios.jpg": "/portfolio/static/media/bios.5fa8c196ede136646176.jpg",
     "index.html": "/portfolio/index.html",
-    "main.6340c7ea.css.map": "/portfolio/static/css/main.6340c7ea.css.map",
-    "main.7ade97ba.js.map": "/portfolio/static/js/main.7ade97ba.js.map",
+    "main.8a8a09d3.css.map": "/portfolio/static/css/main.8a8a09d3.css.map",
+    "main.857bafa3.js.map": "/portfolio/static/js/main.857bafa3.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6340c7ea.css",
-    "static/js/main.7ade97ba.js"
+    "static/css/main.8a8a09d3.css",
+    "static/js/main.857bafa3.js"
   ]
 }
